@@ -86,7 +86,7 @@
             >;
         };
 
-        r3_util {
+        R3_util {
             bindings = <
 &trans  &trans     &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LC(A)  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
@@ -99,19 +99,19 @@
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
-        l123_connection {
+        L123_connection {
             if-layers = <1 2 3>;
             then-layer = <4>;
         };
 
-        r2l1_shift_symbol {
-            if-layers = <5>;
-            then-layer = <1>;
+        R1L2_shift_symbol {
+            if-layers = <5 1>;
+            then-layer = <6>;
         };
 
-        R2L2_number {
-            if-layers = <2>;
-            then-layer = <5>;
+        R2L2 {
+            if-layers = <5 2>;
+            then-layer = <7>;
         };
     };
 };
