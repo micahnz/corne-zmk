@@ -94,7 +94,7 @@
             bindings = <
 &none  &kp Q  &kp W  &kp F  &kp P  &kp B    &kp J  &kp L      &kp U      &kp Y    &kp BSPC   &none
 &none  &kp A  &kp R  &kp S  &kp T  &kp G    &kp M  &kp N      &kp E      &kp I    &kp O      &none
-&none  &kp Z  &kp X  &kp C  &kp V  &kp D    &kp K  &kp H      &kp COMMA  &kp DOT  &kp ENTER  &none
+&none  &kp Z  &kp X  &kp C  &kp D  &kp V    &kp K  &kp H      &kp COMMA  &kp DOT  &kp ENTER  &none
                      &mo 2  &mo 1  &mo 3    &mo 4  &kp SPACE  &mo 5
             >;
         };
