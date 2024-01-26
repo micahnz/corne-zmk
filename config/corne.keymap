@@ -3,42 +3,47 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    behaviors {
-        hm: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            quick-tap-ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
-    };
-
     combos {
         compatible = "zmk,combos";
 
-        bootloader_left {
-            bindings = <&bootloader>;
-            key-positions = <36 37 38 1>;
-            timeout-ms = <500>;
+        R_CTRL {
+            bindings = <&kp RIGHT_CONTROL>;
+            key-positions = <21 20>;
         };
 
-        bootloader_right {
-            bindings = <&bootloader>;
-            key-positions = <10 39 40 41>;
-            timeout-ms = <500>;
+        R_ALT {
+            bindings = <&kp RIGHT_ALT>;
+            key-positions = <22 21>;
         };
 
-        reset_left {
-            bindings = <&sys_reset>;
-            key-positions = <5 38 37 36>;
-            timeout-ms = <500>;
+        R_SHIFT {
+            bindings = <&kp RIGHT_SHIFT>;
+            key-positions = <20 19>;
         };
 
-        reset_right {
-            bindings = <&sys_reset>;
-            key-positions = <6 39 40 41>;
-            timeout-ms = <500>;
+        R_CTRL_SHIFT {
+            bindings = <&kp RS(RIGHT_CONTROL)>;
+            key-positions = <19 20 21>;
+        };
+
+        R_CTRL_ALT {
+            bindings = <&kp RC(RIGHT_ALT)>;
+            key-positions = <22 21 20>;
+        };
+
+        R_ALT_SHIFT {
+            bindings = <&kp RA(LEFT_SHIFT)>;
+            key-positions = <19 22>;
+        };
+
+        R_CTRL_ALT_SHIFT {
+            bindings = <&kp RS(RC(RIGHT_ALT))>;
+            key-positions = <19 20 21 22>;
+        };
+
+        R_GUI {
+            bindings = <&kp RIGHT_GUI>;
+            key-positions = <22 18>;
         };
     };
 
@@ -47,10 +52,10 @@
 
         base {
             bindings = <
-&none  &kp Q           &kp W           &kp F               &kp P             &kp B                  &kp J        &kp L              &kp U                &kp Y            &kp APOS         &none
-&none  &hm LEFT_GUI A  &hm LEFT_ALT R  &hm LEFT_CONTROL S  &hm LEFT_SHIFT T  &kp G                  &kp M        &hm RIGHT_SHIFT N  &hm RIGHT_CONTROL E  &hm RIGHT_ALT I  &hm RIGHT_GUI O  &none
-&none  &kp Z           &kp X           &kp C               &kp V             &kp D                  &kp K        &kp H              &kp COMMA            &kp DOT          &kp FSLH         &none
-                                       &lt 2 ESCAPE        &lt 1 BACKSPACE   &lt 3 C_AL_DATABASE    &lt 4 ENTER  &lt 0 SPACE        &lt 5 DELETE
+&none  &kp Q  &kp W  &kp F  &kp P  &bootloader    &bootloader  &kp L      &kp U      &kp Y    &kp BSPC   &none
+&none  &kp A  &kp R  &kp S  &kp T  &kp G          &kp M        &kp N      &kp E      &kp I    &kp O      &none
+&none  &kp Z  &kp X  &kp C  &kp V  &kp D          &kp K        &kp H      &kp COMMA  &kp DOT  &kp ENTER  &none
+                     &mo 2  &mo 1  &mo 3          &mo 4        &kp SPACE  &mo 5
             >;
         };
 
