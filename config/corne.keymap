@@ -5,12 +5,14 @@
 &mt {
     tapping-term-ms = <200>;
     quick-tap-ms = <200>;
+    require-prior-idle-ms = <100>;
     flavor = "tap-preferred";
 };
 
 &lt {
     tapping-term-ms = <200>;
     quick-tap-ms = <200>;
+    require-prior-idle-ms = <100>;
     flavor = "tap-preferred";
 };
 
@@ -21,25 +23,25 @@
         bootloader_left {
             bindings = <&bootloader>;
             key-positions = <36 37 38 1>;
-            timeout-ms = <200>;
+            timeout-ms = <500>;
         };
 
         bootloader_right {
             bindings = <&bootloader>;
             key-positions = <10 39 40 41>;
-            timeout-ms = <200>;
+            timeout-ms = <500>;
         };
 
         reset_left {
             bindings = <&sys_reset>;
             key-positions = <5 38 37 36>;
-            timeout-ms = <200>;
+            timeout-ms = <500>;
         };
 
         reset_right {
             bindings = <&sys_reset>;
             key-positions = <6 39 40 41>;
-            timeout-ms = <200>;
+            timeout-ms = <500>;
         };
     };
 
