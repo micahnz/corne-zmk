@@ -96,13 +96,13 @@
             key-positions = <13 17>;
         };
 
-        L_BACKSPACE {
-            bindings = <&kp BACKSPACE>;
+        L_TAB {
+            bindings = <&kp TAB>;
             key-positions = <4 3>;
         };
 
-        L_ENTER {
-            bindings = <&kp ENTER>;
+        L_ESC {
+            bindings = <&kp ESCAPE>;
             key-positions = <28 27>;
         };
     };
@@ -121,10 +121,10 @@
 
         nav {
             bindings = <
-&none  &none       &none    &kp CARET   &kp DOLLAR     &none     &kp PRINTSCREEN  &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &none
-&none  &kp ESCAPE  &kp TAB  &kp DELETE  &kp BACKSPACE  &none     &kp CAPSLOCK     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none
-&none  &none       &none    &none       &none          &none     &kp INSERT       &none           &none           &none         &none            &none
-                            &none       &trans         &trans    &trans           &kp ENTER       &trans
+&none  &none       &none      &kp CARET   &kp DOLLAR     &none        &kp PRINTSCREEN  &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &none  &none
+&none  &kp ESCAPE  &kp TAB    &kp DELETE  &kp BACKSPACE  &kp CAPS     &none            &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none  &none
+&none  &kp LC(Z)   &kp LC(X)  &kp LC(C)   &kp LC(V)      &kp LC(Y)    &kp INSERT       &kp HOME        &none           &kp END          &none  &none
+                              &none       &trans         &trans       &trans           &kp ENTER       &trans
             >;
         };
 
