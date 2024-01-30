@@ -47,12 +47,12 @@
         };
 
         R_BACKSPACE {
-            bindings = <&none>;
+            bindings = <&kp BACKSPACE>;
             key-positions = <7 8>;
         };
 
         R_ENTER {
-            bindings = <&none>;
+            bindings = <&kp ENTER>;
             key-positions = <31 32>;
         };
 
@@ -97,12 +97,12 @@
         };
 
         L_BACKSPACE {
-            bindings = <&none>;
+            bindings = <&kp BACKSPACE>;
             key-positions = <4 3>;
         };
 
         L_ENTER {
-            bindings = <&none>;
+            bindings = <&kp ENTER>;
             key-positions = <28 27>;
         };
     };
