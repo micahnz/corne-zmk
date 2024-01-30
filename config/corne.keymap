@@ -46,6 +46,16 @@
             key-positions = <22 18>;
         };
 
+        R_BACKSPACE {
+            bindings = <&none>;
+            key-positions = <7 8>;
+        };
+
+        R_ENTER {
+            bindings = <&none>;
+            key-positions = <31 32>;
+        };
+
         L_CTRL {
             bindings = <&kp LEFT_CONTROL>;
             key-positions = <14 15>;
@@ -84,6 +94,16 @@
         L_GUI {
             bindings = <&kp LEFT_GUI>;
             key-positions = <13 17>;
+        };
+
+        L_BACKSPACE {
+            bindings = <&none>;
+            key-positions = <4 3>;
+        };
+
+        L_ENTER {
+            bindings = <&none>;
+            key-positions = <28 27>;
         };
     };
 
