@@ -92,56 +92,74 @@
 
         base {
             bindings = <
-&none  &kp Q  &kp W  &kp F  &kp P  &kp B    &kp J  &kp L      &kp U      &kp Y    &kp BSPC   &none
-&none  &kp A  &kp R  &kp S  &kp T  &kp G    &kp M  &kp N      &kp E      &kp I    &kp O      &none
-&none  &kp Z  &kp X  &kp C  &kp D  &kp V    &kp K  &kp H      &kp COMMA  &kp DOT  &kp ENTER  &none
-                     &mo 2  &mo 1  &mo 3    &mo 4  &kp SPACE  &mo 5
+&none  &kp Q  &kp W  &kp F  &kp P  &kp B    &kp J  &kp L      &kp U      &kp Y    &kp SINGLE_QUOTE  &none
+&none  &kp A  &kp R  &kp S  &kp T  &kp G    &kp M  &kp N      &kp E      &kp I    &kp O             &none
+&none  &kp Z  &kp X  &kp C  &kp D  &kp V    &kp K  &kp H      &kp COMMA  &kp DOT  &kp SLASH         &none
+                     &mo 5  &mo 1  &mo 2    &mo 3  &kp SPACE  &mo 6
             >;
         };
 
         nav {
             bindings = <
-&none  &none     &none     &none      &none      &none    &kp LC(Y)     &kp LC(V)       &kp LC(C)       &kp LC(X)     &kp LC(Z)        &none
-&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none    &kp CAPSLOCK  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none
-&none  &none     &none     &none      &none      &none    &kp INSERT    &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &none
-                           &none      &trans     &none    &none         &none           &none
+&none  &none       &none    &kp CARET   &kp DOLLAR     &none     &kp PRINTSCREEN  &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &none
+&none  &kp ESCAPE  &kp TAB  &kp DELETE  &kp BACKSPACE  &none     &kp CAPSLOCK     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none
+&none  &none       &none    &none       &none          &none     &kp INSERT       &none           &none           &none         &none            &none
+                            &none       &trans         &trans    &trans           &kp ENTER       &trans
             >;
         };
 
-        media {
+        math_number {
             bindings = <
-&none  &bt BT_CLR    &none         &none         &none         &bootloader     &none       &none             &none              &none            &none       &none
-&none  &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHFT     &none           &none       &kp C_PREVIOUS    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_NEXT  &none
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none       &none             &none              &none            &none       &none
-                                   &trans        &none         &none           &kp C_STOP  &kp C_PLAY_PAUSE  &kp C_MUTE
-            >;
-        };
-
-        number {
-            bindings = <
-&none  &none     &none     &none      &none      &none     &kp LEFT_BRACKET  &kp N7  &kp N8   &kp N9  &kp RIGHT_BRACKET  &none
-&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none     &kp EQUAL         &kp N4  &kp N5   &kp N6  &kp SEMICOLON      &none
-&none  &none     &none     &none      &none      &none     &kp BACKSLASH     &kp N1  &kp N2   &kp N3  &kp GRAVE          &none
-                           &none      &none      &trans    &kp MINUS         &kp N0  &kp DOT
+&none  &none          &kp PERCENT      &kp CARET             &kp DOLLAR             &kp LESS_THAN       &kp DELETE  &kp N7        &kp N8  &kp N9  &kp BACKSPACE  &none
+&none  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp KP_MINUS          &kp KP_PLUS            &kp EQUAL           &kp DOT     &kp N4        &kp N5  &kp N6  &kp NUMBER_0   &none
+&none  &none          &none            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN    &kp COMMA   &kp N1        &kp N2  &kp N3  &none          &none
+                                       &trans                &trans                 &trans              &trans      &kp KP_ENTER  &trans
             >;
         };
 
         symbol {
             bindings = <
-&none  &kp LEFT_BRACE  &kp AMPERSAND    &kp ASTERISK          &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE    &none   &none      &none      &none     &none     &none
-&none  &kp COLON       &kp DOLLAR       &kp PERCENT           &kp CARET              &kp PLUS           &none   &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI  &none
-&none  &kp TILDE       &kp EXCLAMATION  &kp AT_SIGN           &kp HASH               &kp PIPE           &none   &none      &none      &none     &none     &none
-                                        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE     &trans  &none      &none
+&none  &kp TILDE  &kp GRAVE          &kp AT_SIGN           &kp LESS_THAN     &kp HASH     &kp EXCLAMATION  &kp DOLLAR     &kp AMPS   &kp PERCENT   &kp ASTERISK    &none
+&none  &kp CARET  &kp PIPE           &kp LEFT_PARENTHESIS  &kp LEFT_BRACE    &kp COLON    &kp SEMICOLON    &kp SLASH      &kp EQUAL  &kp MINUS     &kp UNDERSCORE  &none
+&none  &none      &kp DOUBLE_QUOTES  &kp SQT               &kp LEFT_BRACKET  &kp COMMA    &kp PERIOD       &kp BACKSLASH  &kp PLUS   &kp QUESTION  &none           &none
+                                     &trans                &trans            &trans       &trans           &trans         &trans
             >;
         };
 
-        functions {
+        symbol_upper {
             bindings = <
-&none  &kp F12  &kp F7  &kp F8  &kp F9  &kp PRINTSCREEN    &bootloader  &none      &none      &none     &none     &none
-&none  &kp F11  &kp F4  &kp F5  &kp F6  &kp SCROLLLOCK     &none        &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI  &none
-&none  &kp F10  &kp F1  &kp F2  &kp F3  &kp PAUSE_BREAK    &none        &none      &none      &none     &none     &none
-                        &none   &none   &none              &none        &none      &trans
+&trans  &trans  &trans  &trans                 &kp GREATER_THAN   &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE    &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans                 &kp RIGHT_BRACKET  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans                 &trans             &trans    &trans  &trans  &trans
             >;
+        };
+
+        bt_sys_media {
+            bindings = <
+&none  &bt BT_CLR    &none         &none         &sys_reset    &bootloader     &none   &none           &kp C_VOL_DN      &kp C_VOLUME_UP  &none       &none
+&none  &none         &none         &none         &none         &none           &none   &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_STOP       &kp C_NEXT  &none
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none   &none           &none             &none            &none       &none
+                                   &trans        &trans        &trans          &trans  &trans          &trans
+            >;
+        };
+
+        fn_sys {
+            bindings = <
+&none  &kp F12  &kp F7  &kp F8  &kp F9  &none    &bootloader  &sys_reset  &none   &none  &none  &none
+&none  &kp F11  &kp F4  &kp F5  &kp F6  &none    &none        &none       &none   &none  &none  &none
+&none  &kp F10  &kp F1  &kp F2  &kp F3  &none    &none        &none       &none   &none  &none  &none
+                        &none   &none   &none    &none        &none       &trans
+            >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        symbol_upper {
+            if-layers = <3 1>;
+            then-layer = <4>;
         };
     };
 };
