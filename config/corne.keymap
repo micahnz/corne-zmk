@@ -130,28 +130,28 @@
 
         math_number {
             bindings = <
-&none  &none          &kp PERCENT      &kp CARET             &kp DOLLAR             &kp LESS_THAN       &kp DELETE  &kp N7        &kp N8  &kp N9  &kp BACKSPACE  &none
-&none  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp KP_MINUS          &kp KP_PLUS            &kp EQUAL           &kp DOT     &kp N4        &kp N5  &kp N6  &kp NUMBER_0   &none
-&none  &none          &none            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN    &kp COMMA   &kp N1        &kp N2  &kp N3  &none          &none
-                                       &trans                &trans                 &trans              &trans      &kp KP_ENTER  &trans
+&none  &none          &kp PERCENT      &kp CARET     &kp DOLLAR   &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp N7  &kp N8  &kp N9  &none         &none
+&none  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp KP_MINUS  &kp KP_PLUS  &kp EQUAL               &kp DOT                &kp N4  &kp N5  &kp N6  &kp NUMBER_0  &none
+&none  &none          &none            &none         &none        &kp LESS_THAN           &kp GREATER_THAN       &kp N1  &kp N2  &kp N3  &kp COMMA     &none
+                                       &trans        &trans       &trans                  &trans                 &trans  &trans
             >;
         };
 
         symbol {
             bindings = <
-&none  &kp TILDE  &kp GRAVE          &kp AT_SIGN           &kp LESS_THAN     &kp HASH     &kp EXCLAMATION  &kp DOLLAR     &kp AMPS   &kp PERCENT   &kp ASTERISK    &none
-&none  &kp CARET  &kp PIPE           &kp LEFT_PARENTHESIS  &kp LEFT_BRACE    &kp COLON    &kp SEMICOLON    &kp SLASH      &kp EQUAL  &kp MINUS     &kp UNDERSCORE  &none
-&none  &none      &kp DOUBLE_QUOTES  &kp SQT               &kp LEFT_BRACKET  &kp COMMA    &kp PERIOD       &kp BACKSLASH  &kp PLUS   &kp QUESTION  &none           &none
-                                     &trans                &trans            &trans       &trans           &trans         &trans
+&none  &kp TILDE  &kp GRAVE  &kp AMPERSAND   &kp LEFT_BRACKET      &kp EXCLAMATION    &kp HASH       &kp DOLLAR     &kp AT_SIGN  &kp PERCENT     &kp ASTERISK  &none
+&none  &kp CARET  &kp PIPE   &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp COLON          &kp SEMICOLON  &kp SLASH      &kp MINUS    &kp UNDERSCORE  &kp EQUAL     &none
+&none  &none      &none      &none           &kp LESS_THAN         &none              &none          &kp BACKSLASH  &kp COMMA    &kp PERIOD      &none         &none
+                             &trans          &trans                &trans             &trans         &trans         &trans
             >;
         };
 
         symbol_upper {
             bindings = <
-&trans  &trans  &trans  &trans                 &kp GREATER_THAN   &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE    &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans                 &kp RIGHT_BRACKET  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans                 &trans             &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans           &kp RIGHT_BRACKET      &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans           &kp GREATER_THAN       &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans           &trans                 &trans    &trans  &trans  &trans
             >;
         };
 
@@ -166,10 +166,10 @@
 
         fn_sys {
             bindings = <
-&none  &kp F12  &kp F7  &kp F8  &kp F9  &none    &bootloader  &sys_reset  &none   &none  &none  &none
-&none  &kp F11  &kp F4  &kp F5  &kp F6  &none    &none        &none       &none   &none  &none  &none
-&none  &kp F10  &kp F1  &kp F2  &kp F3  &none    &none        &none       &none   &none  &none  &none
-                        &none   &none   &none    &none        &none       &trans
+&none  &kp F12  &kp F7  &kp F8  &kp F9  &none     &bootloader  &sys_reset  &none   &none  &none  &none
+&none  &kp F11  &kp F4  &kp F5  &kp F6  &none     &none        &none       &none   &none  &none  &none
+&none  &kp F10  &kp F1  &kp F2  &kp F3  &none     &none        &none       &none   &none  &none  &none
+                        &trans  &trans  &trans    &trans       &trans      &trans
             >;
         };
     };
@@ -178,7 +178,7 @@
         compatible = "zmk,conditional-layers";
 
         symbol_upper {
-            if-layers = <3 1>;
+            if-layers = <3 2>;
             then-layer = <4>;
         };
     };
