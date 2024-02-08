@@ -47,6 +47,11 @@
             key-positions = <22 18>;
         };
 
+        R_DEL {
+            bindings = <&kp DELETE>;
+            key-positions = <8 9>;
+        };
+
         R_BACKSPACE {
             bindings = <&kp BACKSPACE>;
             key-positions = <7 8>;
@@ -104,7 +109,7 @@
 
         L_ESC {
             bindings = <&kp ESCAPE>;
-            key-positions = <28 27>;
+            key-positions = <4 2>;
         };
     };
 
@@ -116,7 +121,7 @@
 &none  &kp Q  &kp W  &kp F  &kp P  &kp B    &kp J  &kp L      &kp U      &kp Y    &kp SINGLE_QUOTE  &none
 &none  &kp A  &kp R  &kp S  &kp T  &kp G    &kp M  &kp N      &kp E      &kp I    &kp O             &none
 &none  &kp Z  &kp X  &kp C  &kp D  &kp V    &kp K  &kp H      &kp COMMA  &kp DOT  &kp SLASH         &none
-                     &mo 5  &mo 1  &mo 2    &mo 3  &kp SPACE  &mo 6
+                     &mo 4  &mo 1  &mo 2    &mo 3  &kp SPACE  &mo 5
             >;
         };
 
@@ -140,19 +145,10 @@
 
         symbol {
             bindings = <
-&none  &kp TILDE  &kp GRAVE  &kp AMPERSAND   &kp LEFT_BRACKET      &kp EXCLAMATION    &kp HASH       &kp DOLLAR     &kp AT_SIGN  &kp PERCENT     &kp ASTERISK  &none
-&none  &kp CARET  &kp PIPE   &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp COLON          &kp SEMICOLON  &kp SLASH      &kp MINUS    &kp UNDERSCORE  &kp EQUAL     &none
-&none  &none      &none      &none           &kp LESS_THAN         &none              &none          &kp BACKSLASH  &kp COMMA    &kp PERIOD      &none         &none
-                             &trans          &trans                &trans             &trans         &trans         &trans
-            >;
-        };
-
-        symbol_upper {
-            bindings = <
-&trans  &trans  &trans  &trans           &kp RIGHT_BRACKET      &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans           &kp GREATER_THAN       &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans           &trans                 &trans    &trans  &trans  &trans
+&none  &kp GRAVE  &kp TILDE      &kp LCTRL             &kp DOLLAR      &kp HASH     &kp EXCLAMATION  &kp AMPERSAND    &kp AT_SIGN            &kp PERCENT       &kp ASTERISK   &none
+&none  &kp PIPE   &kp COLON      &kp LEFT_PARENTHESIS  &kp MINUS       &kp EQUAL    &kp PLUS         &kp UNDERSCORE   &kp RIGHT_PARENTHESIS  &kp SEMICOLON     &kp BACKSLASH  &none
+&none  &none      &kp LESS_THAN  &kp LEFT_BRACKET      &kp LEFT_BRACE  &none        &none            &kp RIGHT_BRACE  &kp RIGHT_BRACKET      &kp GREATER_THAN  &none          &none
+                                 &trans                &trans          &trans       &trans           &trans           &trans
             >;
         };
 
@@ -167,20 +163,31 @@
 
         fn_sys {
             bindings = <
-&none  &kp F12  &kp F7  &kp F8  &kp F9  &none     &bootloader  &sys_reset  &none   &none  &none  &none
+&none  &kp F12  &kp F7  &kp F8  &kp F9  &none     &bootloader  &sys_reset  &none   &none  &none  &tog 6
 &none  &kp F11  &kp F4  &kp F5  &kp F6  &none     &none        &none       &none   &none  &none  &none
 &none  &kp F10  &kp F1  &kp F2  &kp F3  &none     &none        &none       &none   &none  &none  &none
                         &trans  &trans  &trans    &trans       &trans      &trans
             >;
         };
-    };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
+        game_alpha {
+            bindings = <
+&none  &kp TAB    &kp Q  &kp W   &kp E  &kp R        &kp T   &kp Y  &kp U   &kp I  &kp O  &none
+&none  &kp LSHFT  &kp A  &kp S   &kp D  &kp F        &kp G   &kp H  &kp J   &kp K  &kp L  &none
+&none  &kp LCTRL  &kp Z  &kp X   &kp C  &kp V        &kp B   &kp N  &kp M   &kp P  &none  &none
+                         &trans  &mo 7  &kp SPACE    &trans  &mo 1  &trans
+            >;
+        };
 
-        symbol_upper {
-            if-layers = <3 2>;
-            then-layer = <4>;
+        game_num {
+            bindings = <
+&none  &kp ESC  &kp N4  &kp N5  &kp N6  &trans    &trans  &trans  &trans  &trans  &trans  &none
+&none  &trans   &kp N1  &kp N2  &kp N3  &kp N0    &trans  &trans  &trans  &trans  &trans  &none
+&none  &trans   &kp N7  &kp N8  &kp N9  &trans    &trans  &trans  &trans  &trans  &trans  &none
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
         };
     };
+
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
