@@ -116,21 +116,30 @@
     keymap {
         compatible = "zmk,keymap";
 
-        base {
+        base_alpha {
             bindings = <
 &none  &kp Q  &kp W  &kp F  &kp P  &kp B    &kp J  &kp L      &kp U      &kp Y    &kp SINGLE_QUOTE  &none
 &none  &kp A  &kp R  &kp S  &kp T  &kp G    &kp M  &kp N      &kp E      &kp I    &kp O             &none
 &none  &kp Z  &kp X  &kp C  &kp D  &kp V    &kp K  &kp H      &kp COMMA  &kp DOT  &kp SLASH         &none
-                     &mo 4  &mo 1  &mo 2    &mo 3  &kp SPACE  &mo 5
+                     &mo 6  &mo 2  &mo 3    &mo 5  &kp SPACE  &mo 7
+            >;
+        };
+
+        game_alpha {
+            bindings = <
+&none  &kp TAB    &kp Q  &kp W  &kp E  &kp R        &kp T  &kp Y  &kp U  &kp I  &kp O   &none
+&none  &kp LSHFT  &kp A  &kp S  &kp D  &kp F        &kp G  &kp H  &kp J  &kp K  &kp L   &none
+&none  &kp LCTRL  &kp Z  &kp X  &kp C  &kp V        &kp B  &kp N  &kp M  &kp P  &tog 1  &none
+                         &mo 6  &mo 4  &kp SPACE    &mo 5  &mo 2  &mo 7
             >;
         };
 
         nav {
             bindings = <
 &none  &none       &none      &kp CARET   &kp DOLLAR     &none        &kp PRINTSCREEN  &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &none  &none
-&none  &kp ESCAPE  &kp TAB    &kp DELETE  &kp BACKSPACE  &kp CAPS     &none            &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none  &none
-&none  &kp LC(Z)   &kp LC(X)  &kp LC(C)   &kp LC(V)      &kp LC(Y)    &kp INSERT       &kp HOME        &none           &kp END          &none  &none
-                              &none       &trans         &trans       &trans           &kp ENTER       &trans
+&none  &kp ESCAPE  &kp TAB    &kp DELETE  &kp BACKSPACE  &kp CAPS     &kp INSERT       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none  &none
+&none  &kp LC(Z)   &kp LC(X)  &kp LC(C)   &kp LC(V)      &kp LC(Y)    &kp ENTER        &kp HOME        &none           &kp END          &none  &none
+                              &none       &trans         &trans       &trans           &trans          &trans
             >;
         };
 
@@ -140,6 +149,15 @@
 &none  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp KP_MINUS  &kp KP_PLUS  &kp EQUAL               &kp DOT                &kp N4  &kp N5  &kp N6  &kp NUMBER_0  &none
 &none  &none          &none            &none         &none        &kp LESS_THAN           &kp GREATER_THAN       &kp N1  &kp N2  &kp N3  &kp COMMA     &none
                                        &trans        &trans       &trans                  &trans                 &trans  &trans
+            >;
+        };
+
+        game_num {
+            bindings = <
+&none  &kp ESC  &kp N4  &kp N5  &kp N6  &trans    &trans  &trans  &trans  &trans  &trans  &none
+&none  &trans   &kp N1  &kp N2  &kp N3  &kp N0    &trans  &trans  &trans  &trans  &trans  &none
+&none  &trans   &kp N7  &kp N8  &kp N9  &trans    &trans  &trans  &trans  &trans  &trans  &none
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
@@ -163,28 +181,10 @@
 
         fn_sys {
             bindings = <
-&none  &kp F12  &kp F7  &kp F8  &kp F9  &none     &bootloader  &sys_reset  &none   &none  &tog 6  &none
-&none  &kp F11  &kp F4  &kp F5  &kp F6  &none     &none        &none       &none   &none  &none  &none
-&none  &kp F10  &kp F1  &kp F2  &kp F3  &none     &none        &none       &none   &none  &none  &none
+&none  &kp F12  &kp F7  &kp F8  &kp F9  &none     &bootloader  &sys_reset  &none   &none  &tog 1  &none
+&none  &kp F11  &kp F4  &kp F5  &kp F6  &none     &none        &none       &none   &none  &none   &none
+&none  &kp F10  &kp F1  &kp F2  &kp F3  &none     &none        &none       &none   &none  &none   &none
                         &trans  &trans  &trans    &trans       &trans      &trans
-            >;
-        };
-
-        game_alpha {
-            bindings = <
-&none  &kp TAB    &kp Q  &kp W   &kp E  &kp R        &kp T   &kp Y  &kp U   &kp I  &kp O  &none
-&none  &kp LSHFT  &kp A  &kp S   &kp D  &kp F        &kp G   &kp H  &kp J   &kp K  &kp L  &none
-&none  &kp LCTRL  &kp Z  &kp X   &kp C  &kp V        &kp B   &kp N  &kp M   &kp P  &none  &none
-                         &trans  &mo 7  &kp SPACE    &trans  &mo 1  &trans
-            >;
-        };
-
-        game_num {
-            bindings = <
-&none  &kp ESC  &kp N4  &kp N5  &kp N6  &trans    &trans  &trans  &trans  &trans  &trans  &none
-&none  &trans   &kp N1  &kp N2  &kp N3  &kp N0    &trans  &trans  &trans  &trans  &trans  &none
-&none  &trans   &kp N7  &kp N8  &kp N9  &trans    &trans  &trans  &trans  &trans  &trans  &none
-                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
