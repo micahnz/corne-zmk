@@ -82,7 +82,7 @@
 
         R_GUI_CTRL_SHIFT {
             bindings = <&kp RS(RC(RIGHT_GUI))>;
-            key-positions = <18 22 20>;
+            key-positions = <18 19 20>;
         };
 
         R_DEL {
@@ -147,7 +147,7 @@
 
         L_GUI_CTRL {
             bindings = <&kp LC(LEFT_GUI)>;
-            key-positions = <17 15 14>;
+            key-positions = <17 14>;
         };
 
         L_GUI_ALT {
@@ -157,7 +157,7 @@
 
         L_GUI_CTRL_SHIFT {
             bindings = <&kp LS(LC(LEFT_GUI))>;
-            key-positions = <17 15 13>;
+            key-positions = <17 16 15>;
         };
 
         L_TAB {
