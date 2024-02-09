@@ -10,14 +10,14 @@
         td_ls: tap_dance_mod_tap {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <500>;
             bindings = <&kp LEFT_SHIFT>, <&caps_word>;
         };
 
         td_rs: td_rs {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <500>;
             bindings = <&kp RIGHT_SHIFT>, <&caps_word>;
         };
     };
@@ -67,22 +67,22 @@
 
         R_GUI_SHIFT {
             bindings = <&kp RS(RIGHT_GUI)>;
-            key-positions = <18 20 19>;
+            key-positions = <18 20>;
         };
 
         R_GUI_CTRL {
             bindings = <&kp RC(RIGHT_GUI)>;
-            key-positions = <18 20>;
+            key-positions = <18 21>;
         };
 
         R_GUI_ALT {
             bindings = <&kp RA(RIGHT_GUI)>;
-            key-positions = <18 21>;
+            key-positions = <18 22>;
         };
 
         R_GUI_CTRL_SHIFT {
             bindings = <&kp RS(RC(RIGHT_GUI))>;
-            key-positions = <18 21 20>;
+            key-positions = <18 22 20>;
         };
 
         R_DEL {
@@ -142,22 +142,22 @@
 
         L_GUI_SHIFT {
             bindings = <&kp LS(LEFT_GUI)>;
-            key-positions = <17 15 16>;
+            key-positions = <17 15>;
         };
 
         L_GUI_CTRL {
             bindings = <&kp LC(LEFT_GUI)>;
-            key-positions = <17 15>;
+            key-positions = <17 15 14>;
         };
 
         L_GUI_ALT {
             bindings = <&kp LA(LEFT_GUI)>;
-            key-positions = <17 14>;
+            key-positions = <17 13>;
         };
 
         L_GUI_CTRL_SHIFT {
             bindings = <&kp LS(LC(LEFT_GUI))>;
-            key-positions = <17 14 15>;
+            key-positions = <17 15 13>;
         };
 
         L_TAB {
@@ -179,7 +179,7 @@
 &none  &kp Q  &kp W  &kp F  &kp P  &kp B    &kp J  &kp L      &kp U      &kp Y    &kp SINGLE_QUOTE  &none
 &none  &kp A  &kp R  &kp S  &kp T  &kp G    &kp M  &kp N      &kp E      &kp I    &kp O             &none
 &none  &kp Z  &kp X  &kp C  &kp D  &kp V    &kp K  &kp H      &kp COMMA  &kp DOT  &kp SLASH         &none
-                     &mo 7  &mo 2  &mo 3    &mo 6  &kp SPACE  &mo 8
+                     &mo 8  &mo 2  &mo 3    &mo 5  &kp SPACE  &mo 8
             >;
         };
 
@@ -188,7 +188,7 @@
 &none  &kp TAB    &kp Q  &kp W  &kp E  &kp R        &kp T  &kp Y  &kp U  &kp I  &kp O  &none
 &none  &kp LSHFT  &kp A  &kp S  &kp D  &kp F        &kp G  &kp H  &kp J  &kp K  &kp L  &none
 &none  &kp LCTRL  &kp Z  &kp X  &kp C  &kp V        &kp B  &kp N  &kp M  &kp P  &none  &none
-                         &mo 7  &mo 5  &kp SPACE    &mo 6  &mo 2  &mo 8
+                         &mo 8  &mo 4  &kp SPACE    &mo 5  &mo 2  &mo 8
             >;
         };
 
@@ -210,15 +210,6 @@
             >;
         };
 
-        fn {
-            bindings = <
-&none  &none  &none  &none   &none   &none     &none   &kp F7  &kp F8  &kp F9  &kp F12  &none
-&none  &none  &none  &none   &none   &none     &none   &kp F4  &kp F5  &kp F6  &kp F11  &none
-&none  &none  &none  &none   &none   &none     &none   &kp F1  &kp F2  &kp F3  &kp F10  &none
-                     &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-        };
-
         game_num {
             bindings = <
 &none  &kp ESC  &kp N4  &kp N5  &kp N6  &trans    &trans  &trans  &trans  &trans  &trans  &none
@@ -234,6 +225,15 @@
 &none  &kp PIPE   &kp COLON      &kp LEFT_PARENTHESIS  &kp MINUS       &kp EQUAL    &kp PLUS         &kp UNDERSCORE   &kp RIGHT_PARENTHESIS  &kp SEMICOLON     &kp BACKSLASH  &none
 &none  &none      &kp LESS_THAN  &kp LEFT_BRACKET      &kp LEFT_BRACE  &none        &none            &kp RIGHT_BRACE  &kp RIGHT_BRACKET      &kp GREATER_THAN  &none          &none
                                  &trans                &trans          &trans       &trans           &trans           &trans
+            >;
+        };
+
+        fn {
+            bindings = <
+&none  &none  &none  &none   &none   &none     &none   &kp F7  &kp F8  &kp F9  &kp F12  &none
+&none  &none  &none  &none   &none   &none     &none   &kp F4  &kp F5  &kp F6  &kp F11  &none
+&none  &none  &none  &none   &none   &none     &none   &kp F1  &kp F2  &kp F3  &kp F10  &none
+                     &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
@@ -260,8 +260,8 @@
         compatible = "zmk,conditional-layers";
 
         fn {
-            if-layers = <3 6>;
-            then-layer = <4>;
+            if-layers = <3 5>;
+            then-layer = <7>;
         };
     };
 };
