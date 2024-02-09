@@ -75,11 +75,6 @@
             key-positions = <13 14 15>;
         };
 
-        L_CTRL_ALT_SHIFT {
-            bindings = <&kp LC(LA(LEFT_SHIFT))>;
-            key-positions = <13 16>;
-        };
-
         L_TAB {
             bindings = <&kp TAB>;
             key-positions = <4 3>;
@@ -138,11 +133,6 @@
         R_CTRL_ALT {
             bindings = <&kp RC(RIGHT_ALT)>;
             key-positions = <22 21 20>;
-        };
-
-        R_CTRL_ALT_SHIFT {
-            bindings = <&kp RC(RA(RIGHT_SHIFT))>;
-            key-positions = <19 22>;
         };
 
         R_DEL {
