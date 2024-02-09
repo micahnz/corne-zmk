@@ -47,41 +47,6 @@
             key-positions = <18 19>;
         };
 
-        R_GUI_SHIFT {
-            bindings = <&kp RS(RIGHT_GUI)>;
-            key-positions = <18 20>;
-        };
-
-        R_GUI_CTRL {
-            bindings = <&kp RC(RIGHT_GUI)>;
-            key-positions = <18 21>;
-        };
-
-        R_GUI_ALT {
-            bindings = <&kp RA(RIGHT_GUI)>;
-            key-positions = <18 22>;
-        };
-
-        R_GUI_CTRL_SHIFT {
-            bindings = <&kp RS(RC(RIGHT_GUI))>;
-            key-positions = <18 21 20>;
-        };
-
-        R_GUI_CTRL_ALT {
-            bindings = <&kp RA(RC(RIGHT_GUI))>;
-            key-positions = <18 21 22>;
-        };
-
-        R_GUI_ALT_SHIFT {
-            bindings = <&kp RS(RA(RIGHT_GUI))>;
-            key-positions = <18 20 21 22>;
-        };
-
-        R_GUI_CTRL_ALT_SHIFT {
-            bindings = <&kp RS(RA(RC(RIGHT_GUI)))>;
-            key-positions = <18 19 20 21>;
-        };
-
         R_DEL {
             bindings = <&kp DELETE>;
             key-positions = <8 9>;
@@ -135,41 +100,6 @@
         L_GUI {
             bindings = <&kp LEFT_GUI>;
             key-positions = <17 16>;
-        };
-
-        L_GUI_SHIFT {
-            bindings = <&kp LS(LEFT_GUI)>;
-            key-positions = <17 15>;
-        };
-
-        L_GUI_CTRL {
-            bindings = <&kp LC(LEFT_GUI)>;
-            key-positions = <17 14>;
-        };
-
-        L_GUI_ALT {
-            bindings = <&kp LA(LEFT_GUI)>;
-            key-positions = <17 13>;
-        };
-
-        L_GUI_CTRL_SHIFT {
-            bindings = <&kp LS(LC(LEFT_GUI))>;
-            key-positions = <17 15 14>;
-        };
-
-        L_GUI_CTRL_ALT {
-            bindings = <&kp LA(LC(LEFT_GUI))>;
-            key-positions = <17 14 13>;
-        };
-
-        L_GUI_ALT_SHIFT {
-            bindings = <&kp LS(LA(LEFT_GUI))>;
-            key-positions = <17 13 15 14>;
-        };
-
-        L_GUI_CTRL_ALT_SHIFT {
-            bindings = <&kp LS(LA(LC(LEFT_GUI)))>;
-            key-positions = <17 16 15 14>;
         };
 
         L_TAB {
