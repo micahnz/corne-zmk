@@ -50,6 +50,16 @@
             key-positions = <17 15 14>;
         };
 
+        L_CTRL_SHIFT {
+            bindings = <&kp LC(LEFT_SHIFT)>;
+            key-positions = <16 15 14>;
+        };
+
+        L_CTRL_ALT {
+            bindings = <&kp LC(LEFT_ALT)>;
+            key-positions = <13 14 15>;
+        };
+
         L_CTRL {
             bindings = <&kp LEFT_CONTROL>;
             key-positions = <14 15>;
@@ -63,16 +73,6 @@
         L_SHIFT {
             bindings = <&td_ls>;
             key-positions = <16 15>;
-        };
-
-        L_CTRL_SHIFT {
-            bindings = <&kp LC(LEFT_SHIFT)>;
-            key-positions = <16 15 14>;
-        };
-
-        L_CTRL_ALT {
-            bindings = <&kp LC(LEFT_ALT)>;
-            key-positions = <13 14 15>;
         };
 
         L_ALT_SHIFT {
@@ -120,6 +120,16 @@
             key-positions = <18 20 21>;
         };
 
+        R_CTRL_SHIFT {
+            bindings = <&kp RC(RIGHT_SHIFT)>;
+            key-positions = <19 20 21>;
+        };
+
+        R_CTRL_ALT {
+            bindings = <&kp RC(RIGHT_ALT)>;
+            key-positions = <22 21 20>;
+        };
+
         R_CTRL {
             bindings = <&kp RIGHT_CONTROL>;
             key-positions = <21 20>;
@@ -133,16 +143,6 @@
         R_SHIFT {
             bindings = <&td_rs>;
             key-positions = <20 19>;
-        };
-
-        R_CTRL_SHIFT {
-            bindings = <&kp RC(RIGHT_SHIFT)>;
-            key-positions = <19 20 21>;
-        };
-
-        R_CTRL_ALT {
-            bindings = <&kp RC(RIGHT_ALT)>;
-            key-positions = <22 21 20>;
         };
 
         R_ALT_SHIFT {
