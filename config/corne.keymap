@@ -25,7 +25,7 @@
     combos {
         compatible = "zmk,combos";
 
-         L_GUI {
+        L_GUI {
             bindings = <&kp LEFT_GUI>;
             key-positions = <17 16>;
         };
@@ -50,11 +50,6 @@
             key-positions = <17 15 14>;
         };
 
-        L_ALT_SHIFT {
-            bindings = <&kp LA(LEFT_SHIFT)>;
-            key-positions = <16 14>;
-        };
-
         L_CTRL {
             bindings = <&kp LEFT_CONTROL>;
             key-positions = <14 15>;
@@ -72,7 +67,7 @@
 
         L_CTRL_SHIFT {
             bindings = <&kp LC(LEFT_SHIFT)>;
-            key-positions = <16 15 14>;
+            key-positions = <16 14 15>;
         };
 
         L_CTRL_ALT {
@@ -114,15 +109,10 @@
             bindings = <&kp RA(RIGHT_GUI)>;
             key-positions = <18 22>;
         };
-    
+
         R_GUI_CTRL_SHIFT {
             bindings = <&kp RS(RC(RIGHT_GUI))>;
             key-positions = <18 20 21>;
-        };
-
-        R_ALT_SHIFT {
-            bindings = <&kp RA(LEFT_SHIFT)>;
-            key-positions = <19 21>;
         };
 
         R_CTRL {
@@ -169,7 +159,6 @@
             bindings = <&kp ENTER>;
             key-positions = <31 32>;
         };
-
     };
 
     keymap {
