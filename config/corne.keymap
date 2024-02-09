@@ -11,7 +11,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp LEFT_SHIFT>, <&caps_word>;
+            bindings = <&kp LEFT_SHIFT>, <&sk LEFT_SHIFT>;
         };
 
         td_rs: td_right_shift {
@@ -179,10 +179,10 @@
 
         nav {
             bindings = <
-&none  &none       &none      &kp CARET   &kp DOLLAR     &none        &kp PRINTSCREEN  &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &none  &none
-&none  &kp ESCAPE  &kp TAB    &kp DELETE  &kp BACKSPACE  &kp CAPS     &kp INSERT       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none  &none
-&none  &kp LC(Z)   &kp LC(X)  &kp LC(C)   &kp LC(Y)      &kp LC(V)    &kp ENTER        &kp HOME        &none           &kp END          &none  &none
-                              &none       &trans         &trans       &trans           &trans          &trans
+&none  &none       &none      &kp CARET   &kp DOLLAR     &none         &kp PRINTSCREEN  &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &none  &none
+&none  &kp ESCAPE  &kp TAB    &kp DELETE  &kp BACKSPACE  &caps_word    &kp INSERT       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none  &none
+&none  &kp LC(Z)   &kp LC(X)  &kp LC(C)   &kp LC(Y)      &kp LC(V)     &kp ENTER        &kp HOME        &none           &kp END          &none  &none
+                              &none       &trans         &trans        &trans           &trans          &trans
             >;
         };
 
