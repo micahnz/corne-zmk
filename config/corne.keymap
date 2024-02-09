@@ -25,79 +25,29 @@
     combos {
         compatible = "zmk,combos";
 
-        R_CTRL {
-            bindings = <&kp RIGHT_CONTROL>;
-            key-positions = <21 20>;
+         L_GUI {
+            bindings = <&kp LEFT_GUI>;
+            key-positions = <17 16>;
         };
 
-        R_ALT {
-            bindings = <&kp RIGHT_ALT>;
-            key-positions = <22 21>;
+        L_GUI_SHIFT {
+            bindings = <&kp LS(LEFT_GUI)>;
+            key-positions = <17 15>;
         };
 
-        R_SHIFT {
-            bindings = <&td_rs>;
-            key-positions = <20 19>;
+        L_GUI_CTRL {
+            bindings = <&kp LC(LEFT_GUI)>;
+            key-positions = <17 14>;
         };
 
-        R_CTRL_SHIFT {
-            bindings = <&kp RC(RIGHT_SHIFT)>;
-            key-positions = <19 20 21>;
+        L_GUI_ALT {
+            bindings = <&kp LA(LEFT_GUI)>;
+            key-positions = <17 13>;
         };
 
-        R_CTRL_ALT {
-            bindings = <&kp RC(RIGHT_ALT)>;
-            key-positions = <22 21 20>;
-        };
-
-        R_ALT_SHIFT {
-            bindings = <&kp RA(LEFT_SHIFT)>;
-            key-positions = <19 21>;
-        };
-
-        R_CTRL_ALT_SHIFT {
-            bindings = <&kp RC(RA(RIGHT_SHIFT))>;
-            key-positions = <19 22>;
-        };
-
-        R_GUI {
-            bindings = <&kp RIGHT_GUI>;
-            key-positions = <18 19>;
-        };
-
-        R_GUI_SHIFT {
-            bindings = <&kp RS(RIGHT_GUI)>;
-            key-positions = <18 20>;
-        };
-
-        R_GUI_CTRL {
-            bindings = <&kp RC(RIGHT_GUI)>;
-            key-positions = <18 21>;
-        };
-
-        R_GUI_ALT {
-            bindings = <&kp RA(RIGHT_GUI)>;
-            key-positions = <18 22>;
-        };
-
-        R_GUI_CTRL_SHIFT {
-            bindings = <&kp RS(RC(RIGHT_GUI))>;
-            key-positions = <18 19 20>;
-        };
-
-        R_DEL {
-            bindings = <&kp DELETE>;
-            key-positions = <8 9>;
-        };
-
-        R_BACKSPACE {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <7 8>;
-        };
-
-        R_ENTER {
-            bindings = <&kp ENTER>;
-            key-positions = <31 32>;
+        L_GUI_CTRL_SHIFT {
+            bindings = <&kp LS(LC(LEFT_GUI))>;
+            key-positions = <17 15 14>;
         };
 
         L_CTRL {
@@ -135,31 +85,6 @@
             key-positions = <13 16>;
         };
 
-        L_GUI {
-            bindings = <&kp LEFT_GUI>;
-            key-positions = <17 16>;
-        };
-
-        L_GUI_SHIFT {
-            bindings = <&kp LS(LEFT_GUI)>;
-            key-positions = <17 15>;
-        };
-
-        L_GUI_CTRL {
-            bindings = <&kp LC(LEFT_GUI)>;
-            key-positions = <17 14>;
-        };
-
-        L_GUI_ALT {
-            bindings = <&kp LA(LEFT_GUI)>;
-            key-positions = <17 13>;
-        };
-
-        L_GUI_CTRL_SHIFT {
-            bindings = <&kp LS(LC(LEFT_GUI))>;
-            key-positions = <17 16 15>;
-        };
-
         L_TAB {
             bindings = <&kp TAB>;
             key-positions = <4 3>;
@@ -169,6 +94,82 @@
             bindings = <&kp ESCAPE>;
             key-positions = <4 2>;
         };
+
+        R_GUI {
+            bindings = <&kp RIGHT_GUI>;
+            key-positions = <18 19>;
+        };
+
+        R_GUI_SHIFT {
+            bindings = <&kp RS(RIGHT_GUI)>;
+            key-positions = <18 20>;
+        };
+
+        R_GUI_CTRL {
+            bindings = <&kp RC(RIGHT_GUI)>;
+            key-positions = <18 21>;
+        };
+
+        R_GUI_ALT {
+            bindings = <&kp RA(RIGHT_GUI)>;
+            key-positions = <18 22>;
+        };
+
+        R_GUI_CTRL_SHIFT {
+            bindings = <&kp RS(RC(RIGHT_GUI))>;
+            key-positions = <18 20 21>;
+        };
+
+        R_CTRL {
+            bindings = <&kp RIGHT_CONTROL>;
+            key-positions = <21 20>;
+        };
+
+        R_ALT {
+            bindings = <&kp RIGHT_ALT>;
+            key-positions = <22 21>;
+        };
+
+        R_SHIFT {
+            bindings = <&td_rs>;
+            key-positions = <20 19>;
+        };
+
+        R_CTRL_SHIFT {
+            bindings = <&kp RC(RIGHT_SHIFT)>;
+            key-positions = <19 20 21>;
+        };
+
+        R_CTRL_ALT {
+            bindings = <&kp RC(RIGHT_ALT)>;
+            key-positions = <22 21 20>;
+        };
+
+        R_ALT_SHIFT {
+            bindings = <&kp RA(LEFT_SHIFT)>;
+            key-positions = <19 21>;
+        };
+
+        R_CTRL_ALT_SHIFT {
+            bindings = <&kp RC(RA(RIGHT_SHIFT))>;
+            key-positions = <19 22>;
+        };
+
+        R_DEL {
+            bindings = <&kp DELETE>;
+            key-positions = <8 9>;
+        };
+
+        R_BACKSPACE {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <7 8>;
+        };
+
+        R_ENTER {
+            bindings = <&kp ENTER>;
+            key-positions = <31 32>;
+        };
+
     };
 
     keymap {
@@ -179,7 +180,7 @@
 &none  &kp Q  &kp W  &kp F  &kp P  &kp B    &kp J  &kp L      &kp U      &kp Y    &kp SINGLE_QUOTE  &none
 &none  &kp A  &kp R  &kp S  &kp T  &kp G    &kp M  &kp N      &kp E      &kp I    &kp O             &none
 &none  &kp Z  &kp X  &kp C  &kp D  &kp V    &kp K  &kp H      &kp COMMA  &kp DOT  &kp SLASH         &none
-                     &mo 8  &mo 2  &mo 3    &mo 5  &kp SPACE  &mo 8
+                     &mo 7  &mo 2  &mo 3    &mo 5  &kp SPACE  &mo 8
             >;
         };
 
@@ -188,7 +189,7 @@
 &none  &kp TAB    &kp Q  &kp W  &kp E  &kp R        &kp T  &kp Y  &kp U  &kp I  &kp O  &none
 &none  &kp LSHFT  &kp A  &kp S  &kp D  &kp F        &kp G  &kp H  &kp J  &kp K  &kp L  &none
 &none  &kp LCTRL  &kp Z  &kp X  &kp C  &kp V        &kp B  &kp N  &kp M  &kp P  &none  &none
-                         &mo 8  &mo 4  &kp SPACE    &mo 5  &mo 2  &mo 8
+                         &mo 7  &mo 4  &kp SPACE    &mo 5  &mo 2  &mo 8
             >;
         };
 
@@ -261,7 +262,7 @@
 
         fn {
             if-layers = <3 5>;
-            then-layer = <7>;
+            then-layer = <6>;
         };
     };
 };
