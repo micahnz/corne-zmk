@@ -40,16 +40,6 @@
             key-positions = <17 14>;
         };
 
-        L_GUI_ALT {
-            bindings = <&kp LA(LEFT_GUI)>;
-            key-positions = <17 13>;
-        };
-
-        L_GUI_CTRL_SHIFT {
-            bindings = <&kp LS(LC(LEFT_GUI))>;
-            key-positions = <17 15 14>;
-        };
-
         L_CTRL {
             bindings = <&kp LEFT_CONTROL>;
             key-positions = <14 15>;
@@ -103,11 +93,6 @@
         R_GUI_ALT {
             bindings = <&kp RA(RIGHT_GUI)>;
             key-positions = <18 22>;
-        };
-
-        R_GUI_CTRL_SHIFT {
-            bindings = <&kp RS(RC(RIGHT_GUI))>;
-            key-positions = <18 20 21>;
         };
 
         R_CTRL {
