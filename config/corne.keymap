@@ -93,31 +93,37 @@
         L_ALT_TAB {
             bindings = <&kp LA(TAB)>;
             key-positions = <4 13>;
+            slow-release;
         };
 
         L_ALT_SHIFT_TAB {
             bindings = <&kp LA(LS(TAB))>;
             key-positions = <4 13 3>;
+            slow-release;
         };
 
         L_CTRL_TAB {
             bindings = <&kp LC(TAB)>;
             key-positions = <4 14>;
+            slow-release;
         };
 
         L_CTRL_SHIFT_TAB {
             bindings = <&kp LS(LC(TAB))>;
             key-positions = <4 14 3>;
+            slow-release;
         };
 
         L_GUI_TAB {
             bindings = <&kp LG(TAB)>;
             key-positions = <17 3>;
+            slow-release;
         };
 
         L_GUI_SHIFT_TAB {
             bindings = <&kp LG(LS(TAB))>;
             key-positions = <17 3 14>;
+            slow-release;
         };
 
         L_ESC {
