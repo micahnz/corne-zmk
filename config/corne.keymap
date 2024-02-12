@@ -45,6 +45,11 @@
             key-positions = <17 13>;
         };
 
+        L_GUI_CTRL_SHIFT {
+            bindings = <&kp LS(LC(LEFT_GUI))>;
+            key-positions = <17 15 14>;
+        };
+
         L_CTRL {
             bindings = <&kp LEFT_CONTROL>;
             key-positions = <14 15>;
@@ -55,6 +60,11 @@
             key-positions = <13 14>;
         };
 
+        L_ALT_SHIFT {
+            bindings = <&kp LA(LEFT_SHIFT)>;
+            key-positions = <16 13>;
+        };
+
         L_SHIFT {
             bindings = <&td_ls>;
             key-positions = <16 15>;
@@ -62,7 +72,7 @@
 
         L_CTRL_SHIFT {
             bindings = <&kp LC(LEFT_SHIFT)>;
-            key-positions = <16 14 15>;
+            key-positions = <16 15 14>;
         };
 
         L_CTRL_ALT {
@@ -72,7 +82,7 @@
 
         L_CTRL_ALT_SHIFT {
             bindings = <&kp LC(LA(LEFT_SHIFT))>;
-            key-positions = <13 16>;
+            key-positions = <13 16 14 15>;
         };
 
         L_TAB {
@@ -80,9 +90,39 @@
             key-positions = <4 3>;
         };
 
+        L_ALT_TAB {
+            bindings = <&kp LA(TAB)>;
+            key-positions = <4 13>;
+        };
+
+        L_ALT_SHIFT_TAB {
+            bindings = <&kp LA(LS(TAB))>;
+            key-positions = <4 13 3>;
+        };
+
+        L_CTRL_TAB {
+            bindings = <&kp LC(TAB)>;
+            key-positions = <4 14>;
+        };
+
+        L_CTRL_SHIFT_TAB {
+            bindings = <&kp LS(LC(TAB))>;
+            key-positions = <4 14 3>;
+        };
+
+        L_GUI_TAB {
+            bindings = <&kp LG(TAB)>;
+            key-positions = <17 3>;
+        };
+
+        L_GUI_SHIFT_TAB {
+            bindings = <&kp LG(LS(TAB))>;
+            key-positions = <17 3 14>;
+        };
+
         L_ESC {
             bindings = <&kp ESCAPE>;
-            key-positions = <4 2>;
+            key-positions = <2 3>;
         };
 
         R_GUI {
@@ -105,6 +145,11 @@
             key-positions = <18 22>;
         };
 
+        R_GUI_CTRL_SHIFT {
+            bindings = <&kp RS(RC(RIGHT_GUI))>;
+            key-positions = <18 20 21>;
+        };
+
         R_CTRL {
             bindings = <&kp RIGHT_CONTROL>;
             key-positions = <21 20>;
@@ -113,6 +158,11 @@
         R_ALT {
             bindings = <&kp RIGHT_ALT>;
             key-positions = <22 21>;
+        };
+
+        R_ALT_SHIFT {
+            bindings = <&kp RA(LEFT_SHIFT)>;
+            key-positions = <19 22>;
         };
 
         R_SHIFT {
@@ -132,7 +182,7 @@
 
         R_CTRL_ALT_SHIFT {
             bindings = <&kp RC(RA(RIGHT_SHIFT))>;
-            key-positions = <19 22>;
+            key-positions = <19 22 21 20>;
         };
 
         R_DEL {
@@ -148,6 +198,11 @@
         R_ENTER {
             bindings = <&kp ENTER>;
             key-positions = <31 32>;
+        };
+
+        R_SHIFT_ENTER {
+            bindings = <&kp RS(ENTER)>;
+            key-positions = <31 32 33>;
         };
     };
 
@@ -174,10 +229,10 @@
 
         nav {
             bindings = <
-&none  &none       &none      &kp CARET   &kp DOLLAR     &none         &kp PRINTSCREEN  &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &none  &none
-&none  &kp ESCAPE  &kp TAB    &kp DELETE  &kp BACKSPACE  &caps_word    &kp INSERT       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none  &none
-&none  &kp LC(Z)   &kp LC(X)  &kp LC(C)   &kp LC(Y)      &kp LC(V)     &kp ENTER        &kp HOME        &none           &kp END          &none  &none
-                              &none       &trans         &trans        &trans           &trans          &trans
+&none  &none       &none      &kp CARET   &kp DOLLAR     &none           &kp PRINTSCREEN  &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &none  &none
+&none  &kp ESCAPE  &kp TAB    &kp DELETE  &kp BACKSPACE  &kp CAPSLOCK    &none            &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none  &none
+&none  &kp LC(Z)   &kp LC(X)  &kp LC(C)   &kp LC(Y)      &kp LC(V)       &kp ENTER        &kp HOME        &none           &kp END          &none  &none
+                              &none       &trans         &trans          &trans           &trans          &trans
             >;
         };
 
