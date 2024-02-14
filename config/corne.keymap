@@ -1,12 +1,25 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
 &caps_word { continue-list = <UNDERSCORE BACKSPACE DELETE MINUS>; };
 
 / {
     behaviors {
+        macros {
+            kt: key_tap {
+                compatible = "zmk,behavior-macro-one-param";
+                #binding-cells = <1>;
+                bindings =
+                    <&macro_param_1to1>,
+                    <&macro_tap &kp MACRO_PLACEHOLDER>;
+
+                label = "Key tap macro";
+            };
+        };
+
         td_ls: tap_dance_mod_tap {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
@@ -96,12 +109,17 @@
         };
 
         L_TAB {
-            bindings = <&ht TAB TAB>;
+            bindings = <&kp TAB>;
             key-positions = <4 3>;
         };
 
+        L_SHIFT_TAB {
+            bindings = <&kp LS(TAB)>;
+            key-positions = <4 3 2>;
+        };
+
         L_ALT_TAB {
-            bindings = <&kp LA(TAB)>;
+            bindings = <&kt LA(TAB)>;
             key-positions = <4 13>;
             slow-release;
         };
@@ -272,10 +290,10 @@
 
         symbol {
             bindings = <
-&none  &kp GRAVE  &kp TILDE      &kp CARET             &kp DOLLAR      &kp HASH     &kp EXCLAMATION  &kp AMPERSAND    &kp AT_SIGN            &kp PERCENT       &kp ASTERISK   &none
-&none  &kp PIPE   &kp COLON      &kp LEFT_PARENTHESIS  &kp MINUS       &kp EQUAL    &kp PLUS         &kp UNDERSCORE   &kp RIGHT_PARENTHESIS  &kp SEMICOLON     &kp BACKSLASH  &none
-&none  &none      &kp LESS_THAN  &kp LEFT_BRACKET      &kp LEFT_BRACE  &none        &none            &kp RIGHT_BRACE  &kp RIGHT_BRACKET      &kp GREATER_THAN  &none          &none
-                                 &trans                &trans          &trans       &trans           &trans           &trans
+&none  &kp GRAVE  &kp TILDE      &kp CARET         &kp DOLLAR            &kp HASH     &kp EXCLAMATION  &kp AMPERSAND          &kp AT_SIGN        &kp PERCENT       &kp ASTERISK   &none
+&none  &kp PIPE   &kp COLON      &kp MINUS         &kp LEFT_PARENTHESIS  &kp EQUAL    &kp PLUS         &kp RIGHT_PARENTHESIS  &kp UNDERSCORE     &kp SEMICOLON     &kp BACKSLASH  &none
+&none  &none      &kp LESS_THAN  &kp LEFT_BRACKET  &kp LEFT_BRACE        &none        &none            &kp RIGHT_BRACE        &kp RIGHT_BRACKET  &kp GREATER_THAN  &none          &none
+                                 &trans            &trans                &trans       &trans           &trans                 &trans
             >;
         };
 
