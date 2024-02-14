@@ -20,6 +20,16 @@
             tapping-term-ms = <500>;
             bindings = <&kp RIGHT_SHIFT>, <&caps_word>;
         };
+
+        ht: ht {
+            compatible = "zmk,behavior-hold-tap";
+            label = "basic hold tap";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
     };
 
     combos {
@@ -86,7 +96,7 @@
         };
 
         L_TAB {
-            bindings = <&kp TAB>;
+            bindings = <&ht TAB TAB>;
             key-positions = <4 3>;
         };
 
@@ -236,7 +246,7 @@
         nav {
             bindings = <
 &none  &kp LG(LC(LA(Q)))  &kp LG(LC(LA(W)))  &kp LG(LC(LA(F)))  &kp LG(LC(LA(P)))  &kp LG(LC(LA(B)))    &kp PRINTSCREEN  &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &none  &none
-&none  &kp ESCAPE         &kp TAB            &kp DELETE         &kp BACKSPACE      &kp CAPSLOCK         &none            &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none  &none
+&none  &kp LG(LC(LA(A)))  &kp LG(LC(LA(R)))  &kp LG(LC(LA(S)))  &kp LG(LC(LA(T)))  &kp LG(LC(LA(G)))    &kp CAPSLOCK     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none  &none
 &none  &kp LC(Z)          &kp LC(X)          &kp LC(C)          &kp LC(Y)          &kp LC(V)            &kp ENTER        &kp HOME        &none           &kp END          &none  &none
                                              &none              &trans             &trans               &trans           &trans          &trans
             >;
@@ -262,7 +272,7 @@
 
         symbol {
             bindings = <
-&none  &kp GRAVE  &kp TILDE      &kp LCTRL             &kp DOLLAR      &kp HASH     &kp EXCLAMATION  &kp AMPERSAND    &kp AT_SIGN            &kp PERCENT       &kp ASTERISK   &none
+&none  &kp GRAVE  &kp TILDE      &kp CARET             &kp DOLLAR      &kp HASH     &kp EXCLAMATION  &kp AMPERSAND    &kp AT_SIGN            &kp PERCENT       &kp ASTERISK   &none
 &none  &kp PIPE   &kp COLON      &kp LEFT_PARENTHESIS  &kp MINUS       &kp EQUAL    &kp PLUS         &kp UNDERSCORE   &kp RIGHT_PARENTHESIS  &kp SEMICOLON     &kp BACKSLASH  &none
 &none  &none      &kp LESS_THAN  &kp LEFT_BRACKET      &kp LEFT_BRACE  &none        &none            &kp RIGHT_BRACE  &kp RIGHT_BRACKET      &kp GREATER_THAN  &none          &none
                                  &trans                &trans          &trans       &trans           &trans           &trans
