@@ -8,7 +8,7 @@
 
 / {
      macros {
-        kt: key_tap {
+        ktap: key_tap {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings =
@@ -119,7 +119,7 @@
         };
 
         L_ALT_TAB {
-            bindings = <&kt LA(TAB)>;
+            bindings = <&ktap LA(TAB)>;
             key-positions = <4 13>;
             slow-release;
         };
