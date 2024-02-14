@@ -7,19 +7,19 @@
 &caps_word { continue-list = <UNDERSCORE BACKSPACE DELETE MINUS>; };
 
 / {
-    behaviors {
-        macros {
-            kt: key_tap {
-                compatible = "zmk,behavior-macro-one-param";
-                #binding-cells = <1>;
-                bindings =
-                    <&macro_param_1to1>,
-                    <&macro_tap &kp MACRO_PLACEHOLDER>;
+     macros {
+        kt: key_tap {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings =
+                <&macro_param_1to1>,
+                <&macro_tap &kp MACRO_PLACEHOLDER>;
 
-                label = "Key tap macro";
-            };
+            label = "Key tap macro";
         };
-
+    };
+    
+    behaviors {
         td_ls: tap_dance_mod_tap {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
