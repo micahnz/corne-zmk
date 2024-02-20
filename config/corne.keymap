@@ -102,7 +102,7 @@
         compatible = "zmk,combos";
 
         L_GUI {
-            bindings = <&sk_ht LEFT_GUI>;
+            bindings = <&sk_ht LEFT_GUI LEFT_GUI>;
             key-positions = <17 16>;
         };
 
