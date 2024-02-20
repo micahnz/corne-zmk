@@ -38,7 +38,7 @@
         };
 
         // tab layer mod &lm_tab <mod> <key>
-        lm_tab: lm {
+        lm_tab: lm_tab {
             compatible = "zmk,behavior-macro-two-param";
             wait-ms = <0>;
             tap-ms = <0>;
