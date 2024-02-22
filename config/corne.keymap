@@ -397,7 +397,7 @@
         tab_layer_mod {
             bindings = <
 &trans  &trans        &trans            &kp LEFT_SHIFT  &kp TAB  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LS(LEFT_ALT  &kp LEFT_CONTROL  &trans          &trans   &kp LEFT_GUI    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT_ALT  &kp LEFT_CONTROL  &trans          &trans   &kp LEFT_GUI    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans        &trans            &trans          &trans   &trans          &trans  &trans  &trans  &trans  &trans  &trans
                                         &trans          &trans   &trans          &trans  &trans  &trans
             >;
