@@ -63,7 +63,14 @@
     };
 
     behaviors {
-        td_ls: tap_dance_mod_tap {
+        td_num_fn: td_num_fn {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <500>;
+            bindings = <&mo 3>, <&sl 6>;
+        };
+
+        td_ls: td_ls {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <500>;
@@ -311,7 +318,7 @@
 &none  &kp Q  &kp W  &kp F  &kp P  &kp B    &kp J  &kp L      &kp U      &kp Y    &kp SINGLE_QUOTE  &none
 &none  &kp A  &kp R  &kp S  &kp T  &kp G    &kp M  &kp N      &kp E      &kp I    &kp O             &none
 &none  &kp Z  &kp X  &kp C  &kp D  &kp V    &kp K  &kp H      &kp COMMA  &kp DOT  &kp SLASH         &none
-                     &mo 7  &mo 2  &mo 3    &mo 5  &kp SPACE  &mo 8
+                     &mo 7  &mo 2  &td_num_fn   &mo 5  &kp SPACE  &mo 8
             >;
         };
 
@@ -333,12 +340,12 @@
             >;
         };
 
-        math_number {
+        num {
             bindings = <
-&none  &none          &kp PERCENT      &kp CARET     &kp DOLLAR   &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp N7  &kp N8  &kp N9  &none         &none
-&none  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp KP_MINUS  &kp KP_PLUS  &kp EQUAL               &kp DOT                &kp N4  &kp N5  &kp N6  &kp NUMBER_0  &none
-&none  &none          &none            &none         &none        &kp LESS_THAN           &kp GREATER_THAN       &kp N1  &kp N2  &kp N3  &kp COMMA     &none
-                                       &trans        &trans       &trans                  &trans                 &trans  &trans
+&none  &none      &kp N7  &kp N8  &kp N9  &none     &none      &kp DOLLAR  &kp CARET  &kp PERCENT   &none      &none
+&none  &kp DOT    &kp N4  &kp N5  &kp N6  &kp N0    &kp EQUAL  &kp PLUS    &kp MINUS  &kp ASTERISK  &kp SLASH  &none
+&none  &kp COMMA  &kp N1  &kp N2  &kp N3  &none     &none      &none       &none      &none         &none      &none
+                          &trans  &trans  &trans    &trans     &trans      &trans
             >;
         };
 
@@ -362,10 +369,10 @@
 
         fn {
             bindings = <
-&none  &none  &none  &none   &none   &none     &none   &kp F7  &kp F8  &kp F9  &kp F12  &none
-&none  &none  &none  &none   &none   &none     &none   &kp F4  &kp F5  &kp F6  &kp F11  &none
-&none  &none  &none  &none   &none   &none     &none   &kp F1  &kp F2  &kp F3  &kp F10  &none
-                     &trans  &trans  &trans    &trans  &trans  &trans
+&none  &kp F12  &kp F7  &kp F8  &kp F9  &none     &none   &none &none  &none &none &none
+&none  &kp F11  &kp F4  &kp F5  &kp F6  &none     &none   &none  &none  &none  &none  &none
+&none  &kp F10  &kp F1  &kp F2  &kp F3  &none     &none   &none  &none  &none &none  &none
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
