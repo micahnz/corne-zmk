@@ -67,7 +67,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <500>;
-            bindings = <&mo 3>, <&sl 6>;
+            bindings = <&mo 3>, <&mo 6>;
         };
 
         td_ls: td_ls {
@@ -185,7 +185,7 @@
         };
 
         L_ALT_SHIFT_TAB {
-            bindings = <&lm_tab LEFT_ALT LS(TAB)>;
+            bindings = <&lm_tab LS(LEFT_ALT) TAB>;
             key-positions = <4 13 3>;
             slow-release;
         };
@@ -219,8 +219,8 @@
             key-positions = <2 3>;
         };
 
-        L_SPACE {
-            bindings = <&kp SPACE>;
+        L_ENTER {
+            bindings = <&kp ENTER>;
             key-positions = <27 28>;
         };
 
@@ -315,10 +315,10 @@
 
         base_alpha {
             bindings = <
-&none  &kp Q  &kp W  &kp F  &kp P  &kp B    &kp J  &kp L      &kp U      &kp Y    &kp SINGLE_QUOTE  &none
-&none  &kp A  &kp R  &kp S  &kp T  &kp G    &kp M  &kp N      &kp E      &kp I    &kp O             &none
-&none  &kp Z  &kp X  &kp C  &kp D  &kp V    &kp K  &kp H      &kp COMMA  &kp DOT  &kp SLASH         &none
-                     &mo 7  &mo 2  &td_num_fn   &mo 5  &kp SPACE  &mo 8
+&none  &kp Q  &kp W  &kp F  &kp P  &kp B         &kp J  &kp L      &kp U      &kp Y    &kp SINGLE_QUOTE  &none
+&none  &kp A  &kp R  &kp S  &kp T  &kp G         &kp M  &kp N      &kp E      &kp I    &kp O             &none
+&none  &kp Z  &kp X  &kp C  &kp D  &kp V         &kp K  &kp H      &kp COMMA  &kp DOT  &kp SLASH         &none
+                     &mo 7  &mo 2  &td_num_fn    &mo 5  &kp SPACE  &mo 8
             >;
         };
 
@@ -334,7 +334,7 @@
         nav {
             bindings = <
 &none  &kp LG(LC(LA(Q)))  &kp LG(LC(LA(W)))  &kp LG(LC(LA(F)))  &kp LG(LC(LA(P)))  &kp LG(LC(LA(B)))    &kp PRINTSCREEN  &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &none  &none
-&none  &kp LC(A)          &kp LG(LC(LA(R)))  &kp LC(S)          &kp LG(LC(LA(T)))  &kp LG(LC(LA(G)))    &kp CAPSLOCK     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none  &none
+&none  &none              &none              &kp DEL            &kp BACKSPACE      &kp SPACE            &kp CAPSLOCK     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none  &none
 &none  &kp LC(Z)          &kp LC(X)          &kp LC(C)          &kp LC(Y)          &kp LC(V)            &kp INSERT       &kp HOME        &none           &kp END          &none  &none
                                              &none              &trans             &trans               &trans           &trans          &trans
             >;
@@ -369,9 +369,9 @@
 
         fn {
             bindings = <
-&none  &kp F12  &kp F7  &kp F8  &kp F9  &none     &none   &none &none  &none &none &none
-&none  &kp F11  &kp F4  &kp F5  &kp F6  &none     &none   &none  &none  &none  &none  &none
-&none  &kp F10  &kp F1  &kp F2  &kp F3  &none     &none   &none  &none  &none &none  &none
+&none  &kp F12  &kp F7  &kp F8  &kp F9  &none     &none   &none   &none   &none  &none  &none
+&none  &kp F11  &kp F4  &kp F5  &kp F6  &none     &none   &none   &none   &none  &none  &none
+&none  &kp F10  &kp F1  &kp F2  &kp F3  &none     &none   &none   &none   &none  &none  &none
                         &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
@@ -394,12 +394,12 @@
             >;
         };
 
-        tab_combos {
+        tab_layer_mod {
             bindings = <
-&trans  &trans        &trans  &kp LEFT_SHIFT  &kp TAB  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT_ALT  &trans  &trans          &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans  &trans          &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                              &trans          &trans   &trans    &trans  &trans  &trans
+&trans  &trans        &trans            &kp LEFT_SHIFT  &kp TAB  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LS(LEFT_ALT  &kp LEFT_CONTROL  &trans          &trans   &kp LEFT_GUI    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans            &trans          &trans   &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                                        &trans          &trans   &trans          &trans  &trans  &trans
             >;
         };
     };
