@@ -78,7 +78,7 @@
                 ;
         };
 
-        //
+        // layer mod left special case for initiating tab combos
         lm_left_tab: lm_left_tab {
             compatible = "zmk,behavior-macro-two-param";
             wait-ms = <0>;
@@ -166,7 +166,6 @@
         };
 
         // holp tap layer mod for left mod layer
-
         ht_lm_left: ht_lm_left {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&lm_left>, <&kp>;
@@ -269,37 +268,37 @@
         };
 
         L_ALT_TAB {
-            bindings = <&lm_tab LEFT_ALT TAB>;
+            bindings = <&lm_left_tab LEFT_ALT TAB>;
             key-positions = <4 13>;
             slow-release;
         };
 
         L_ALT_SHIFT_TAB {
-            bindings = <&lm_tab LEFT_ALT LS(TAB)>;
+            bindings = <&lm_left_tab LEFT_ALT LS(TAB)>;
             key-positions = <4 13 3>;
             slow-release;
         };
 
         L_CTRL_TAB {
-            bindings = <&lm_tab LEFT_CONTROL TAB>;
+            bindings = <&lm_left_tab LEFT_CONTROL TAB>;
             key-positions = <4 14>;
             slow-release;
         };
 
         L_CTRL_SHIFT_TAB {
-            bindings = <&lm_tab LEFT_CONTROL LS(TAB)>;
+            bindings = <&lm_left_tab LEFT_CONTROL LS(TAB)>;
             key-positions = <4 14 3>;
             slow-release;
         };
 
         L_GUI_TAB {
-            bindings = <&lm_tab LEFT_GUI TAB>;
+            bindings = <&lm_left_tab LEFT_GUI TAB>;
             key-positions = <17 4>;
             slow-release;
         };
 
         L_GUI_SHIFT_TAB {
-            bindings = <&lm_tab LEFT_GUI LS(TAB)>;
+            bindings = <&lm_left_tab LEFT_GUI LS(TAB)>;
             key-positions = <17 3 4>;
             slow-release;
         };
