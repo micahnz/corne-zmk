@@ -165,7 +165,7 @@
         };
 
         L_ALT {
-            bindings = <&sk_ht_lm LEFT_ALT>;
+            bindings = <&sk_ht_lm LEFT_ALT LEFT_ALT>;
             key-positions = <13 14>;
         };
 
