@@ -72,7 +72,7 @@
                 , <&macro_press &sk MACRO_PLACEHOLDER>
                 , <&macro_pause_for_release>
                 , <&macro_param_1to1>
-                , <&macro_release &kp MACRO_PLACEHOLDER>
+                , <&macro_release &sk MACRO_PLACEHOLDER>
                 , <&macro_release &mo 9>
                 ;
         };
@@ -88,7 +88,7 @@
                 , <&macro_press &sk MACRO_PLACEHOLDER>
                 , <&macro_pause_for_release>
                 , <&macro_param_1to1>
-                , <&macro_release &kp MACRO_PLACEHOLDER>
+                , <&macro_release &sk MACRO_PLACEHOLDER>
                 , <&macro_release &mo 10>
                 ;
         };
