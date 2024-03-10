@@ -125,7 +125,6 @@
 
         ht: ht {
             compatible = "zmk,behavior-hold-tap";
-            label = "basic hold tap";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -137,7 +136,6 @@
 
         sk_ht: sk_ht {
             compatible = "zmk,behavior-hold-tap";
-            label = "sticky hold tap";
             bindings = <&sk>, <&kp>;
 
             #binding-cells = <2>;
@@ -149,7 +147,6 @@
 
         ht_lm_left: ht_lm_left {
             compatible = "zmk,behavior-hold-tap";
-            label = "hold tap layer mod left";
             bindings = <&lm_left>, <&kp>;
 
             #binding-cells = <2>;
@@ -159,7 +156,6 @@
 
         ht_lm_left_sk: ht_lm_left_sk {
             compatible = "zmk,behavior-hold-tap";
-            label = "hold tap layer mod left with sticky keys";
             bindings = <&lm_left_sk>, <&kp>;
 
             #binding-cells = <2>;
@@ -169,7 +165,6 @@
         
         ht_lm_right: ht_lm_right {
             compatible = "zmk,behavior-hold-tap";
-            label = "hold tap layer mod right";
             bindings = <&lm_right>, <&kp>;
 
             #binding-cells = <2>;
@@ -251,38 +246,38 @@
             key-positions = <4 3 2>;
         };
 
-        L_ALT_TAB {
-            bindings = <&ht_lm_left LEFT_ALT TAB>;
+       L_ALT_TAB {
+            bindings = <&ht_lm_left LA(TAB) LA(TAB)>;
             key-positions = <4 13>;
             slow-release;
         };
 
         L_ALT_SHIFT_TAB {
-            bindings = <&ht_lm_left LS(LEFT_ALT) TAB>;
+            bindings = <&ht_lm_left LS(LA(TAB)) LS(LA(TAB))>;
             key-positions = <4 13 3>;
             slow-release;
         };
 
         L_CTRL_TAB {
-            bindings = <&ht_lm_left LC(TAB)>;
+            bindings = <&ht_lm_left LC(TAB) LC(TAB)>;
             key-positions = <4 14>;
             slow-release;
         };
 
         L_CTRL_SHIFT_TAB {
-            bindings = <&ht_lm_left LS(LC(TAB))>;
+            bindings = <&ht_lm_left LS(LC(TAB)) LS(LC(TAB))>;
             key-positions = <4 14 3>;
             slow-release;
         };
 
         L_GUI_TAB {
-            bindings = <&ht_lm_left LG(TAB)>;
+            bindings = <&ht_lm_left LG(TAB) LG(TAB)>;
             key-positions = <17 4>;
             slow-release;
         };
 
         L_GUI_SHIFT_TAB {
-            bindings = <&ht_lm_left LG(LS(TAB))>;
+            bindings = <&ht_lm_left LG(LS(TAB)) LG(LS(TAB))>;
             key-positions = <17 3 4>;
             slow-release;
         };
