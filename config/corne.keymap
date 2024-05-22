@@ -565,10 +565,10 @@
 
         base_alpha {
             bindings = <
-&none  &kp Q  &kp W  &kp F         &kp P        &kp B            &kp J          &kp L        &kp U          &kp Y    &kp SINGLE_QUOTE  &none
-&none  &kp A  &kp R  &kp S         &kp T        &kp G            &kp M          &kp N        &kp E          &kp I    &kp O             &none
-&none  &kp Z  &kp X  &kp C         &kp D        &kp V            &kp K          &kp H        &kp COMMA      &kp DOT  &kp SLASH         &none
-                     &td_left_sys  &lt 4 SPACE  &ht_mo_sl 1 4    &ht_mo_sl 1 4  &lt 4 SPACE  &td_right_sys
+&none  &kp Q  &kp W  &kp F         &kp P        &kp B    &kp J  &kp L        &kp U          &kp Y    &kp SINGLE_QUOTE  &none
+&none  &kp A  &kp R  &kp S         &kp T        &kp G    &kp M  &kp N        &kp E          &kp I    &kp O             &none
+&none  &kp Z  &kp X  &kp C         &kp D        &kp V    &kp K  &kp H        &kp COMMA      &kp DOT  &kp SLASH         &none
+                     &td_left_sys  &lt 4 SPACE  &mo 1    &mo 1  &lt 4 SPACE  &td_right_sys
             >;
         };
 
