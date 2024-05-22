@@ -178,14 +178,14 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <500>;
-            bindings = <&mo 6>, <&mo 7>;
+            bindings = <&mo 2>, <&mo 6>;
         };
 
         td_right_sys: td_right_sys {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <500>;
-            bindings = <&mo 6>, <&mo 7>;
+            bindings = <&mo 2>, <&mo 7>;
         };
 
         // double tab left shift for caps_word
@@ -284,8 +284,8 @@
             bindings = <&mo>, <&sl>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
+            tapping-term-ms = <500>;
+            flavor = "hold-preferred";
         };
     };
 
@@ -568,7 +568,7 @@
 &none  &kp Q  &kp W  &kp F         &kp P        &kp B            &kp J          &kp L        &kp U          &kp Y    &kp SINGLE_QUOTE  &none
 &none  &kp A  &kp R  &kp S         &kp T        &kp G            &kp M          &kp N        &kp E          &kp I    &kp O             &none
 &none  &kp Z  &kp X  &kp C         &kp D        &kp V            &kp K          &kp H        &kp COMMA      &kp DOT  &kp SLASH         &none
-                     &td_left_sys  &lt 2 SPACE  &ht_mo_sl 1 4    &ht_mo_sl 1 4  &lt 2 SPACE  &td_right_sys
+                     &td_left_sys  &lt 4 SPACE  &ht_mo_sl 1 4    &ht_mo_sl 1 4  &lt 4 SPACE  &td_right_sys
             >;
         };
 
@@ -592,9 +592,9 @@
 
         nav {
             bindings = <
-&trans  &mo 0   &trans          &kp UP_ARROW    &trans           &kp PRINTSCREEN    &kp PRINTSCREEN  &trans          &kp UP_ARROW    &trans           &to 0      &trans
-&trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp CAPSLOCK       &kp CAPSLOCK     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans     &trans
-&trans  &trans  &kp LC(X)       &kp LC(C)       &trans           &kp LC(V)          &kp RC(V)        &kp RC(Y)       &kp RC(C)       &kp RC(X)        &kp RC(Z)  &trans
+&trans  &trans  &trans          &kp UP_ARROW    &trans           &kp PRINTSCREEN    &kp PRINTSCREEN  &trans          &kp UP_ARROW    &trans           &trans  &trans
+&trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp CAPSLOCK       &kp CAPSLOCK     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
+&trans  &trans  &kp LC(X)       &kp LC(C)       &kp LC(Y)        &kp LC(V)          &kp RC(V)        &kp RC(Y)       &kp RC(C)       &kp RC(X)        &trans  &trans
                                 &trans          &trans           &trans             &trans           &trans          &trans
             >;
         };
@@ -603,17 +603,17 @@
             bindings = <
 &none  &kp GRAVE  &kp TILDE      &kp CARET         &kp DOLLAR            &kp HASH     &kp EXCLAMATION  &kp AMPERSAND          &kp AT_SIGN        &kp PERCENT       &kp ASTERISK   &none
 &none  &kp PIPE   &kp COLON      &kp MINUS         &kp LEFT_PARENTHESIS  &kp EQUAL    &kp PLUS         &kp RIGHT_PARENTHESIS  &kp UNDERSCORE     &kp SEMICOLON     &kp BACKSLASH  &none
-&none  &none      &kp LESS_THAN  &kp LEFT_BRACKET  &kp LEFT_BRACE        &none        &none            &kp RIGHT_BRACE        &kp RIGHT_BRACKET  &kp GREATER_THAN  &kp QUESTION   &none
+&none  &sl 5      &kp LESS_THAN  &kp LEFT_BRACKET  &kp LEFT_BRACE        &none        &none            &kp RIGHT_BRACE        &kp RIGHT_BRACKET  &kp GREATER_THAN  &sl 5          &none
                                  &trans            &trans                &trans       &trans           &trans                 &trans
             >;
         };
 
-        modes {
+        symbol_flip {
             bindings = <
-&trans  &trans  &tog 4  &tog 3  &tog 2  &trans    &trans  &tog 2  &tog 3  &tog 4  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&none  &kp ASTERISK   &kp PERCENT       &kp AT_SIGN        &kp AMPERSAND          &kp EXCLAMATION    &kp HASH   &kp DOLLAR            &kp CARET         &kp TILDE      &kp GRAVE  &none
+&none  &kp BACKSLASH  &kp SEMICOLON     &kp UNDERSCORE     &kp RIGHT_PARENTHESIS  &kp PLUS           &kp EQUAL  &kp LEFT_PARENTHESIS  &kp MINUS         &kp COLON      &kp PIPE   &none
+&none  &trans         &kp GREATER_THAN  &kp RIGHT_BRACKET  &kp RIGHT_BRACE        &none              &none      &kp LEFT_BRACE        &kp LEFT_BRACKET  &kp LESS_THAN  &trans     &none
+                                        &trans             &trans                 &trans             &trans     &trans                &trans
             >;
         };
 
