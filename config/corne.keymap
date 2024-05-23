@@ -10,9 +10,7 @@
     quick-release;
 };
 
-&lt {
-    tapping-term-ms = <500>;
-};
+&lt { tapping-term-ms = <500>; };
 
 / {
     macros {
@@ -59,7 +57,7 @@
             #binding-cells = <1>;
             bindings =
                 <&macro_press>,
-                <&mo 8 &macro_param_1to1>,
+                <&mo 9 &macro_param_1to1>,
                 <&macro_press>,
                 <&kp MACRO_PLACEHOLDER>,
                 <&macro_pause_for_release>,
@@ -67,7 +65,7 @@
                 <&macro_release>,
                 <&kp MACRO_PLACEHOLDER>,
                 <&macro_release>,
-                <&mo 8>;
+                <&mo 9>;
         };
 
         // layer mod left mod combos for additive mod combos with sticky key
@@ -79,7 +77,7 @@
             #binding-cells = <1>;
             bindings =
                 <&macro_press>,
-                <&mo 8 &macro_param_1to1>,
+                <&mo 9 &macro_param_1to1>,
                 <&macro_press>,
                 <&sk MACRO_PLACEHOLDER>,
                 <&macro_pause_for_release>,
@@ -87,7 +85,7 @@
                 <&macro_release>,
                 <&sk MACRO_PLACEHOLDER>,
                 <&macro_release>,
-                <&mo 8>;
+                <&mo 9>;
         };
 
         // layer mod left special case for initiating tab combos
@@ -99,7 +97,7 @@
             #binding-cells = <2>;
             bindings =
                 <&macro_press>,
-                <&mo 8 &macro_param_1to1>,
+                <&mo 9 &macro_param_1to1>,
                 <&macro_press>,
                 <&kp MACRO_PLACEHOLDER &macro_param_2to1>,
                 <&macro_tap>,
@@ -109,7 +107,7 @@
                 <&macro_release>,
                 <&kp MACRO_PLACEHOLDER>,
                 <&macro_release>,
-                <&mo 8>;
+                <&mo 9>;
         };
 
         // layer mod right mod combos for additive mod combos
@@ -121,7 +119,7 @@
             #binding-cells = <1>;
             bindings =
                 <&macro_press>,
-                <&mo 9 &macro_param_1to1>,
+                <&mo 10 &macro_param_1to1>,
                 <&macro_press>,
                 <&kp MACRO_PLACEHOLDER>,
                 <&macro_pause_for_release>,
@@ -129,7 +127,7 @@
                 <&macro_release>,
                 <&kp MACRO_PLACEHOLDER>,
                 <&macro_release>,
-                <&mo 9>;
+                <&mo 10>;
         };
 
         // layer mod left special case for initiating tab combos
@@ -141,7 +139,7 @@
             #binding-cells = <2>;
             bindings =
                 <&macro_press>,
-                <&mo 9 &macro_param_1to1>,
+                <&mo 10 &macro_param_1to1>,
                 <&macro_press>,
                 <&kp MACRO_PLACEHOLDER &macro_param_2to1>,
                 <&macro_tap>,
@@ -151,7 +149,7 @@
                 <&macro_release>,
                 <&kp MACRO_PLACEHOLDER>,
                 <&macro_release>,
-                <&mo 9>;
+                <&mo 10>;
         };
 
         // layer mod left mod combos for additive mod combos with sticky key
@@ -163,7 +161,7 @@
             #binding-cells = <1>;
             bindings =
                 <&macro_press>,
-                <&mo 9 &macro_param_1to1>,
+                <&mo 10 &macro_param_1to1>,
                 <&macro_press>,
                 <&sk MACRO_PLACEHOLDER>,
                 <&macro_pause_for_release>,
@@ -171,25 +169,25 @@
                 <&macro_release>,
                 <&sk MACRO_PLACEHOLDER>,
                 <&macro_release>,
-                <&mo 9>;
+                <&mo 10>;
         };
     };
 
     behaviors {
         // double tap hold num layer for function key layer
 
-        td_left_sys: td_left_sys {
+        td_left_nav_sys: td_left_nav_sys {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <500>;
-            bindings = <&mo 2>, <&mo 6>;
+            bindings = <&mo 5>, <&mo 7>;
         };
 
-        td_right_sys: td_right_sys {
+        td_right_nav_sys: td_right_nav_sys {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <500>;
-            bindings = <&mo 2>, <&mo 7>;
+            bindings = <&mo 5>, <&mo 8>;
         };
 
         // double tab left shift for caps_word
@@ -569,10 +567,10 @@
 
         base_alpha {
             bindings = <
-&none  &kp Q  &kp W  &kp F         &kp P        &kp B    &kp J  &kp L        &kp U          &kp Y    &kp SINGLE_QUOTE  &none
-&none  &kp A  &kp R  &kp S         &kp T        &kp G    &kp M  &kp N        &kp E          &kp I    &kp O             &none
-&none  &kp Z  &kp X  &kp C         &kp D        &kp V    &kp K  &kp H        &kp COMMA      &kp DOT  &kp SLASH         &none
-                     &td_left_sys  &lt 4 SPACE  &mo 1    &mo 1  &lt 4 SPACE  &td_right_sys
+&none  &kp Q  &kp W  &kp F             &kp P        &kp B    &kp J  &kp L        &kp U              &kp Y    &kp SINGLE_QUOTE  &none
+&none  &kp A  &kp R  &kp S             &kp T        &kp G    &kp M  &kp N        &kp E              &kp I    &kp O             &none
+&none  &kp Z  &kp X  &kp C             &kp D        &kp V    &kp K  &kp H        &kp COMMA          &kp DOT  &kp SLASH         &none
+                     &td_left_nav_sys  &lt 2 SPACE  &mo 1    &mo 1  &lt 2 SPACE  &td_right_nav_sys
             >;
         };
 
@@ -587,46 +585,55 @@
 
         num {
             bindings = <
-&trans  &to 0   &kp N7  &kp N8  &kp N9  &trans       &trans     &kp N7  &kp N8  &kp N9  &to 0   &trans
-&trans  &kp N0  &kp N4  &kp N5  &kp N6  &kp DOT      &kp DOT    &kp N4  &kp N5  &kp N6  &kp N0  &trans
-&trans  &mo 3   &kp N1  &kp N2  &kp N3  &kp COMMA    &kp COMMA  &kp N1  &kp N2  &kp N3  &mo 3   &trans
+&trans  &trans  &kp N7  &kp N8  &kp N9  &kp COMMA    &kp COMMA  &kp N7  &kp N8  &kp N9  &trans  &trans
+&trans  &sl 4   &kp N4  &kp N5  &kp N6  &kp N0       &kp N0     &kp N4  &kp N5  &kp N6  &sl 4   &trans
+&trans  &sl 3   &kp N1  &kp N2  &kp N3  &kp DOT      &kp DOT    &kp N1  &kp N2  &kp N3  &sl 3   &trans
                         &trans  &trans  &trans       &trans     &trans  &trans
-            >;
-        };
-
-        nav {
-            bindings = <
-&trans  &trans  &trans          &kp UP_ARROW    &trans           &kp PRINTSCREEN    &kp PRINTSCREEN  &trans          &kp UP_ARROW    &trans           &trans  &trans
-&trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp CAPSLOCK       &kp CAPSLOCK     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
-&trans  &trans  &kp LC(X)       &kp LC(C)       &kp LC(Y)        &kp LC(V)          &kp RC(V)        &kp RC(Y)       &kp RC(C)       &kp RC(X)        &trans  &trans
-                                &trans          &trans           &trans             &trans           &trans          &trans
             >;
         };
 
         symbol {
             bindings = <
-&none  &kp GRAVE  &kp TILDE      &kp CARET         &kp DOLLAR            &kp HASH     &kp EXCLAMATION  &kp AMPERSAND          &kp AT_SIGN        &kp PERCENT       &kp ASTERISK   &none
-&none  &kp PIPE   &kp COLON      &kp MINUS         &kp LEFT_PARENTHESIS  &kp EQUAL    &kp PLUS         &kp RIGHT_PARENTHESIS  &kp UNDERSCORE     &kp SEMICOLON     &kp BACKSLASH  &none
-&none  &sl 5      &kp LESS_THAN  &kp LEFT_BRACKET  &kp LEFT_BRACE        &none        &none            &kp RIGHT_BRACE        &kp RIGHT_BRACKET  &kp GREATER_THAN  &sl 5          &none
+&none  &kp GRAVE  &kp TILDE      &kp CARET         &kp DOLLAR            &kp HASH     &kp EXCLAMATION  &kp AMPERSAND          &kp AT_SIGN        &kp PERCENT       &kp ASTERISK  &none
+&none  &trans     &kp COLON      &kp MINUS         &kp LEFT_PARENTHESIS  &kp EQUAL    &kp PLUS         &kp RIGHT_PARENTHESIS  &kp UNDERSCORE     &kp SEMICOLON     &trans        &none
+&none  &trans     &kp LESS_THAN  &kp LEFT_BRACKET  &kp LEFT_BRACE        &kp PIPE     &kp BACKSLASH    &kp RIGHT_BRACE        &kp RIGHT_BRACKET  &kp GREATER_THAN  &trans        &none
                                  &trans            &trans                &trans       &trans           &trans                 &trans
             >;
         };
 
         symbol_flip {
             bindings = <
-&none  &kp ASTERISK   &kp PERCENT       &kp AT_SIGN        &kp AMPERSAND          &kp EXCLAMATION    &kp HASH   &kp DOLLAR            &kp CARET         &kp TILDE      &kp GRAVE  &none
-&none  &kp BACKSLASH  &kp SEMICOLON     &kp UNDERSCORE     &kp RIGHT_PARENTHESIS  &kp PLUS           &kp EQUAL  &kp LEFT_PARENTHESIS  &kp MINUS         &kp COLON      &kp PIPE   &none
-&none  &trans         &kp GREATER_THAN  &kp RIGHT_BRACKET  &kp RIGHT_BRACE        &none              &none      &kp LEFT_BRACE        &kp LEFT_BRACKET  &kp LESS_THAN  &trans     &none
-                                        &trans             &trans                 &trans             &trans     &trans                &trans
+&none  &kp ASTERISK  &kp PERCENT       &kp AT_SIGN        &kp AMPERSAND          &kp EXCLAMATION    &kp HASH   &kp DOLLAR            &kp CARET         &kp TILDE      &kp GRAVE  &none
+&none  &trans        &kp SEMICOLON     &kp UNDERSCORE     &kp RIGHT_PARENTHESIS  &kp PLUS           &kp EQUAL  &kp LEFT_PARENTHESIS  &kp MINUS         &kp COLON      &trans     &none
+&none  &trans        &kp GREATER_THAN  &kp RIGHT_BRACKET  &kp RIGHT_BRACE        &kp BACKSLASH      &kp PIPE   &kp LEFT_BRACE        &kp LEFT_BRACKET  &kp LESS_THAN  &trans     &none
+                                       &trans             &trans                 &trans             &trans     &trans                &trans
+            >;
+        };
+
+        nav {
+            bindings = <
+&trans  &kp LC(A)  &kp PAGE_DOWN   &kp UP_ARROW    &kp PAGE_UP      &kp PRINTSCREEN    &kp PRINTSCREEN  &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &kp RC(A)  &trans
+&trans  &mo 6      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp CAPSLOCK       &kp CAPSLOCK     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &mo 6      &trans
+&trans  &kp LC(Z)  &kp LC(X)       &kp LC(C)       &kp LC(Y)        &kp LC(V)          &kp RC(V)        &kp RC(Y)       &kp RC(C)       &kp RC(X)        &kp RC(Z)  &trans
+                                   &trans          &trans           &trans             &trans           &trans          &trans
+            >;
+        };
+
+        nav_alt {
+            bindings = <
+&trans  &trans  &kp C_STOP  &kp C_VOLUME_UP    &kp C_PLAY_PAUSE  &trans    &trans  &kp C_PLAY_PAUSE  &kp C_VOLUME_UP    &kp C_STOP  &trans  &trans
+&trans  &trans  &kp C_PREV  &kp C_VOLUME_DOWN  &kp C_NEXT        &trans    &trans  &kp C_NEXT        &kp C_VOLUME_DOWN  &kp C_PREV  &trans  &trans
+&trans  &trans  &trans      &trans             &trans            &trans    &trans  &trans            &trans             &trans      &trans  &trans
+                            &trans             &trans            &trans    &trans  &trans            &trans
             >;
         };
 
         sys_left {
             bindings = <
-&none  &bt BT_CLR    &out OUT_BLE  &out OUT_USB  &sys_reset    &bootloader     &none   &none           &kp C_VOL_DN      &kp C_VOLUME_UP  &none       &none
-&none  &none         &none         &none         &none         &none           &none   &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_STOP       &kp C_NEXT  &none
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none   &none           &none             &none            &none       &none
-                                   &trans        &trans        &trans          &trans  &trans          &trans
+&trans  &bt BT_CLR    &out OUT_BLE  &out OUT_USB  &sys_reset    &bootloader     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans  &trans
+                                    &trans        &trans        &trans          &trans  &trans  &trans
             >;
         };
 
