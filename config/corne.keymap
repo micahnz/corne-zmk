@@ -774,7 +774,7 @@
 &trans  &kp LC(A)  &kp PAGE_DOWN   &kp UP_ARROW    &kp PAGE_UP      &kp PRINTSCREEN    &kp PRINTSCREEN  &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &kp RC(A)  &trans
 &trans  &mo 6      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp CAPSLOCK       &kp CAPSLOCK     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &mo 6      &trans
 &trans  &kp LC(Z)  &kp LC(X)       &kp LC(C)       &kp LC(Y)        &kp LC(V)          &kp RC(V)        &kp RC(Y)       &kp RC(C)       &kp RC(X)        &kp RC(Z)  &trans
-                                   &trans          &trans           &trans             &trans           &trans          &trans
+                                   &none           &none            &none              &none            &none           &none
             >;
         };
 
