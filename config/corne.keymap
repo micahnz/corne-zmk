@@ -461,51 +461,71 @@
         L_NAV_UP {
             bindings = <&lm_left_nav UP_ARROW>;
             key-positions = <37 3>;
+            timeout-ms = <100>;
+            slow-release;
         };
 
         L_NAV_DOWN {
             bindings = <&lm_left_nav DOWN_ARROW>;
             key-positions = <37 15>;
+            timeout-ms = <100>;
+            slow-release;
         };
 
         L_NAV_LEFT {
             bindings = <&lm_left_nav LEFT_ARROW>;
             key-positions = <37 14>;
+            timeout-ms = <100>;
+            slow-release;
         };
 
         L_NAV_RIGHT {
             bindings = <&lm_left_nav RIGHT_ARROW>;
             key-positions = <37 16>;
+            timeout-ms = <100>;
+            slow-release;
         };
 
         L_NAV_PASTE {
             bindings = <&lm_left_nav LC(V)>;
             key-positions = <37 29>;
+            timeout-ms = <100>;
+            slow-release;
         };
 
         L_NAV_REDO {
             bindings = <&lm_left_nav LC(Y)>;
             key-positions = <37 28>;
+            timeout-ms = <100>;
+            slow-release;
         };
 
         L_NAV_COPY {
             bindings = <&lm_left_nav LC(C)>;
             key-positions = <37 27>;
+            timeout-ms = <100>;
+            slow-release;
         };
 
         L_NAV_CUT {
             bindings = <&lm_left_nav LC(X)>;
             key-positions = <37 26>;
+            timeout-ms = <100>;
+            slow-release;
         };
 
         L_NAV_UNDO {
             bindings = <&lm_left_nav LC(Z)>;
-            key-positions = <37 25>;
+            key-positions = <37 17>;
+            timeout-ms = <100>;
+            slow-release;
         };
 
         L_NAV_SELECT_ALL {
             bindings = <&lm_left_nav LC(A)>;
             key-positions = <37 0>;
+            timeout-ms = <100>;
+            slow-release;
         };
 
         R_GUI {
@@ -652,51 +672,71 @@
         R_NAV_UP {
             bindings = <&lm_right_nav UP_ARROW>;
             key-positions = <8 40>;
+            timeout-ms = <100>;
+            slow-release;
         };
 
         R_NAV_DOWN {
             bindings = <&lm_right_nav DOWN_ARROW>;
             key-positions = <20 40>;
+            timeout-ms = <100>;
+            slow-release;
         };
 
         R_NAV_LEFT {
             bindings = <&lm_right_nav LEFT_ARROW>;
             key-positions = <40 19>;
+            timeout-ms = <100>;
+            slow-release;
         };
 
         R_NAV_RIGHT {
             bindings = <&lm_right_nav RIGHT_ARROW>;
             key-positions = <40 21>;
+            timeout-ms = <100>;
+            slow-release;
         };
 
         R_NAV_PASTE {
             bindings = <&lm_right_nav RC(V)>;
             key-positions = <40 30>;
+            timeout-ms = <100>;
+            slow-release;
         };
 
         R_NAV_REDO {
             bindings = <&lm_right_nav RC(Y)>;
             key-positions = <40 31>;
+            timeout-ms = <100>;
+            slow-release;
         };
 
         R_NAV_COPY {
             bindings = <&lm_right_nav RC(C)>;
             key-positions = <40 32>;
+            timeout-ms = <100>;
+            slow-release;
         };
 
         R_NAV_CUT {
             bindings = <&lm_right_nav RC(X)>;
             key-positions = <40 33>;
+            timeout-ms = <100>;
+            slow-release;
         };
 
         R_NAV_UNDO {
             bindings = <&lm_right_nav RC(Z)>;
-            key-positions = <40 34>;
+            key-positions = <40 18>;
+            timeout-ms = <100>;
+            slow-release;
         };
 
         R_NAV_SELECT_ALL {
             bindings = <&lm_right_nav RC(A)>;
             key-positions = <40 10>;
+            timeout-ms = <100>;
+            slow-release;
         };
 
         L_R_SHIFT {
@@ -758,7 +798,7 @@
 &trans  &kp LC(A)  &kp PAGE_DOWN   &kp UP_ARROW    &kp PAGE_UP      &kp PRINTSCREEN    &kp PRINTSCREEN  &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &kp RC(A)  &trans
 &trans  &mo 6      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp CAPSLOCK       &kp CAPSLOCK     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &mo 6      &trans
 &trans  &kp LC(Z)  &kp LC(X)       &kp LC(C)       &kp LC(Y)        &kp LC(V)          &kp RC(V)        &kp RC(Y)       &kp RC(C)       &kp RC(X)        &kp RC(Z)  &trans
-                                   &none           &none            &none              &none            &none           &none
+                                   &trans          &trans           &trans             &trans           &trans          &trans
             >;
         };
 
