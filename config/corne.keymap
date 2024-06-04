@@ -490,7 +490,7 @@
 
         L_NAV_REDO {
             bindings = <&lm_left_nav LC(Y)>;
-            key-positions = <37 28>;
+            key-positions = <37 17>;
             slow-release;
         };
 
@@ -508,7 +508,7 @@
 
         L_NAV_UNDO {
             bindings = <&lm_left_nav LC(Z)>;
-            key-positions = <37 17>;
+            key-positions = <37 28>;
             slow-release;
         };
 
@@ -691,7 +691,7 @@
 
         R_NAV_REDO {
             bindings = <&lm_right_nav RC(Y)>;
-            key-positions = <40 31>;
+            key-positions = <40 18>;
             slow-release;
         };
 
@@ -709,7 +709,7 @@
 
         R_NAV_UNDO {
             bindings = <&lm_right_nav RC(Z)>;
-            key-positions = <40 18>;
+            key-positions = <40 31>;
             slow-release;
         };
 
