@@ -60,16 +60,14 @@
             tap-ms = <0>;
             #binding-cells = <1>;
             bindings =
-                <&macro_press>,
-                <&mo 10 &macro_param_1to1>,
+                <&macro_press &mo 11 &macro_param_1to1>,
                 <&macro_press>,
                 <&kp MACRO_PLACEHOLDER>,
                 <&macro_pause_for_release>,
                 <&macro_param_1to1>,
                 <&macro_release>,
                 <&kp MACRO_PLACEHOLDER>,
-                <&macro_release>,
-                <&mo 10>;
+                <&macro_release &mo 11>;
         };
 
         lm_left_nav: lm_left_nav {
@@ -96,13 +94,13 @@
             tap-ms = <0>;
             #binding-cells = <1>;
             bindings
-                = <&macro_press &mo 10>
+                = <&macro_press &mo 11>
                 , <&macro_param_1to1>
                 , <&macro_press &sk MACRO_PLACEHOLDER>
                 , <&macro_pause_for_release>
                 , <&macro_param_1to1>
                 , <&macro_release &sk MACRO_PLACEHOLDER>
-                , <&macro_release &mo 10>
+                , <&macro_release &mo 11>
                 ;
         };
 
@@ -114,7 +112,7 @@
             tap-ms = <0>;
             #binding-cells = <2>;
             bindings
-                = <&macro_press &mo 10>
+                = <&macro_press &mo 11>
                 , <&macro_param_1to1>
                 , <&macro_press &kp MACRO_PLACEHOLDER>
                 , <&macro_param_2to1>
@@ -122,7 +120,7 @@
                 , <&macro_pause_for_release>
                 , <&macro_param_1to1>
                 , <&macro_release &kp MACRO_PLACEHOLDER>
-                , <&macro_release &mo 10>
+                , <&macro_release &mo 11>
                 ;
         };
 
@@ -134,13 +132,13 @@
             tap-ms = <0>;
             #binding-cells = <1>;
             bindings
-                = <&macro_press &mo 11>
+                = <&macro_press &mo 12>
                 , <&macro_param_1to1>
                 , <&macro_press &kp MACRO_PLACEHOLDER>
                 , <&macro_pause_for_release>
                 , <&macro_param_1to1>
                 , <&macro_release &kp MACRO_PLACEHOLDER>
-                , <&macro_release &mo 11>
+                , <&macro_release &mo 12>
                 ;
         };
 
@@ -168,7 +166,7 @@
             tap-ms = <0>;
             #binding-cells = <2>;
             bindings
-                = <&macro_press &mo 11>
+                = <&macro_press &mo 12>
                 , <&macro_param_1to1>
                 , <&macro_press &kp MACRO_PLACEHOLDER>
                 , <&macro_param_2to1>
@@ -176,7 +174,7 @@
                 , <&macro_pause_for_release>
                 , <&macro_param_1to1>
                 , <&macro_release &kp MACRO_PLACEHOLDER>
-                , <&macro_release &mo 11>
+                , <&macro_release &mo 12>
                 ;
         };
 
@@ -188,13 +186,13 @@
             tap-ms = <0>;
             #binding-cells = <1>;
             bindings
-                = <&macro_press &mo 11>
+                = <&macro_press &mo 12>
                 , <&macro_param_1to1>
                 , <&macro_press &sk MACRO_PLACEHOLDER>
                 , <&macro_pause_for_release>
                 , <&macro_param_1to1>
                 , <&macro_release &sk MACRO_PLACEHOLDER>
-                , <&macro_release &mo 11>
+                , <&macro_release &mo 12>
                 ;
         };
     };
@@ -204,8 +202,8 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
-            tapping-term-ms = <500>;
-            quick-tap-ms = <100>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
             hold-while-undecided;
             bindings = <&mo>, <&kp>;
 
@@ -216,8 +214,8 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
-            tapping-term-ms = <500>;
-            quick-tap-ms = <100>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
             hold-while-undecided;
             bindings = <&mo>, <&kp>;
 
@@ -230,14 +228,14 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <500>;
-            bindings = <&mo 4>, <&mo 8>;
+            bindings = <&mo 4>, <&mo 9>;
         };
 
         td_right_nav_sys: td_right_nav_sys {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <500>;
-            bindings = <&mo 3>, <&mo 9>;
+            bindings = <&mo 3>, <&mo 10>;
         };
 
         // double tab left shift for caps_word
@@ -785,7 +783,7 @@
         left_num_nav {
             bindings = <
 &trans  &trans  &kp N7  &kp N8  &kp N9  &kp COMMA    &kp PRINTSCREEN  &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &kp RC(A)  &trans
-&trans  &sl 5   &kp N4  &kp N5  &kp N6  &kp N0       &kp RC(Y)        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &mo 4      &trans
+&trans  &sl 5   &kp N4  &kp N5  &kp N6  &kp N0       &kp RC(Y)        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &mo 8      &trans
 &trans  &sl 6   &kp N1  &kp N2  &kp N3  &kp DOT      &kp RC(V)        &kp RC(Z)       &kp RC(C)       &kp RC(X)        &trans     &trans
                         &trans  &trans  &trans       &trans           &trans          &trans
             >;
@@ -794,7 +792,7 @@
         right_num_nav {
             bindings = <
 &trans  &kp LC(A)  &kp PAGE_DOWN   &kp UP_ARROW    &kp PAGE_UP      &kp PRINTSCREEN    &kp COMMA  &kp N7  &kp N8  &kp N9  &trans  &trans
-&trans  &mo 4      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(Y)          &kp N0     &kp N4  &kp N5  &kp N6  &sl 5   &trans
+&trans  &mo 8      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(Y)          &kp N0     &kp N4  &kp N5  &kp N6  &sl 5   &trans
 &trans  &trans     &kp LC(X)       &kp LC(C)       &kp LC(Z)        &kp LC(V)          &kp DOT    &kp N1  &kp N2  &kp N3  &sl 6   &trans
                                    &trans          &trans           &trans             &trans     &trans  &trans
             >;
@@ -815,6 +813,15 @@
 &none  &kp BACKSLASH  &kp SEMICOLON     &kp UNDERSCORE     &kp RIGHT_PARENTHESIS  &kp PLUS           &kp EQUAL  &kp LEFT_PARENTHESIS  &kp MINUS         &kp COLON      &kp PIPE   &none
 &none  &trans         &kp GREATER_THAN  &kp RIGHT_BRACKET  &kp RIGHT_BRACE        &kp BACKSLASH      &kp PIPE   &kp LEFT_BRACE        &kp LEFT_BRACKET  &kp LESS_THAN  &trans     &none
                                         &trans             &trans                 &trans             &trans     &trans                &trans
+            >;
+        };
+
+        symbol_cond {
+            bindings = <
+&none  &kp GRAVE  &kp TILDE      &kp CARET         &kp DOLLAR            &kp HASH     &kp EXCLAMATION  &kp AMPERSAND          &kp AT_SIGN        &kp PERCENT       &kp ASTERISK   &none
+&none  &kp PIPE   &kp COLON      &kp MINUS         &kp LEFT_PARENTHESIS  &kp EQUAL    &kp PLUS         &kp RIGHT_PARENTHESIS  &kp UNDERSCORE     &kp SEMICOLON     &kp BACKSLASH  &none
+&none  &trans     &kp LESS_THAN  &kp LEFT_BRACKET  &kp LEFT_BRACE        &kp PIPE     &kp BACKSLASH    &kp RIGHT_BRACE        &kp RIGHT_BRACKET  &kp GREATER_THAN  &trans         &none
+                                 &trans            &trans                &trans       &trans           &trans                 &trans
             >;
         };
 
@@ -861,6 +868,15 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans         &trans           &trans             &trans             &trans         &trans
                         &trans  &trans  &trans    &trans         &trans           &trans
             >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        sym {
+            if-layers = <1 2>;
+            then-layer = <7>;
         };
     };
 };
