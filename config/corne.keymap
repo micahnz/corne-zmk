@@ -208,6 +208,7 @@
             quick-tap-ms = <100>;
             hold-while-undecided;
             bindings = <&mo>, <&kp>;
+
             hold-trigger-key-positions = <1 2 3 4 5 13 14 15 16 17 25 26 27 28 29>;
         };
 
@@ -219,6 +220,7 @@
             quick-tap-ms = <100>;
             hold-while-undecided;
             bindings = <&mo>, <&kp>;
+
             hold-trigger-key-positions = <6 7 8 9 10 18 19 20 21 22 30 31 32 33 34>;
         };
 
@@ -475,12 +477,12 @@
 
         L_SYM {
             bindings = <&sl 5>;
-            key-positions = <37 25>;
+            key-positions = <37 13>;
         };
 
         L_SYM_FLIP {
             bindings = <&sl 6>;
-            key-positions = <37 13>;
+            key-positions = <37 25>;
         };
 
         L_NAV_UP {
@@ -676,12 +678,12 @@
 
         R_SYM {
             bindings = <&sl 5>;
-            key-positions = <40 34>;
+            key-positions = <40 22>;
         };
 
         R_SYM_FLIP {
             bindings = <&sl 6>;
-            key-positions = <40 22>;
+            key-positions = <40 34>;
         };
 
         R_NAV_UP {
@@ -783,8 +785,8 @@
         left_num_nav {
             bindings = <
 &trans  &trans  &kp N7  &kp N8  &kp N9  &kp COMMA    &kp PRINTSCREEN  &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &kp RC(A)  &trans
-&trans  &sl 6   &kp N4  &kp N5  &kp N6  &kp N0       &kp RC(Y)        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &mo 4      &trans
-&trans  &sl 5   &kp N1  &kp N2  &kp N3  &kp DOT      &kp RC(V)        &kp RC(Z)       &kp RC(C)       &kp RC(X)        &trans     &trans
+&trans  &sl 5   &kp N4  &kp N5  &kp N6  &kp N0       &kp RC(Y)        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &mo 4      &trans
+&trans  &sl 6   &kp N1  &kp N2  &kp N3  &kp DOT      &kp RC(V)        &kp RC(Z)       &kp RC(C)       &kp RC(X)        &trans     &trans
                         &trans  &trans  &trans       &trans           &trans          &trans
             >;
         };
@@ -792,8 +794,8 @@
         right_num_nav {
             bindings = <
 &trans  &kp LC(A)  &kp PAGE_DOWN   &kp UP_ARROW    &kp PAGE_UP      &kp PRINTSCREEN    &kp COMMA  &kp N7  &kp N8  &kp N9  &trans  &trans
-&trans  &mo 4      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(Y)          &kp N0     &kp N4  &kp N5  &kp N6  &sl 6   &trans
-&trans  &trans     &kp LC(X)       &kp LC(C)       &kp LC(Z)        &kp LC(V)          &kp DOT    &kp N1  &kp N2  &kp N3  &sl 5   &trans
+&trans  &mo 4      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(Y)          &kp N0     &kp N4  &kp N5  &kp N6  &sl 5   &trans
+&trans  &trans     &kp LC(X)       &kp LC(C)       &kp LC(Z)        &kp LC(V)          &kp DOT    &kp N1  &kp N2  &kp N3  &sl 6   &trans
                                    &trans          &trans           &trans             &trans     &trans  &trans
             >;
         };
