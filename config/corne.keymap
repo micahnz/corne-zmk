@@ -514,7 +514,7 @@
 
         L_NAV_SELECT_ALL {
             bindings = <&lm_left_nav LC(A)>;
-            key-positions = <37 0>;
+            key-positions = <37 1>;
             slow-release;
         };
 
