@@ -792,8 +792,8 @@
         right_num_nav {
             bindings = <
 &trans  &kp LC(A)  &kp PAGE_DOWN   &kp UP_ARROW    &kp PAGE_UP      &kp PRINTSCREEN    &kp COMMA  &kp N7  &kp N8  &kp N9  &trans  &trans
-&trans  &mo 8      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(Y)          &kp N0     &kp N4  &kp N5  &kp N6  &sl 5   &trans
-&trans  &trans     &kp LC(X)       &kp LC(C)       &kp LC(Z)        &kp LC(V)          &kp DOT    &kp N1  &kp N2  &kp N3  &sl 6   &trans
+&trans  &mo 8      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(Y)          &kp N0     &kp N4  &kp N5  &kp N6  &sl 6   &trans
+&trans  &trans     &kp LC(X)       &kp LC(C)       &kp LC(Z)        &kp LC(V)          &kp DOT    &kp N1  &kp N2  &kp N3  &sl 5   &trans
                                    &trans          &trans           &trans             &trans     &trans  &trans
             >;
         };
