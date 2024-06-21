@@ -733,14 +733,14 @@
 &none  &kp Q  &kp W  &kp F             &kp P        &kp B    &kp J  &kp L        &kp U              &kp Y    &kp SINGLE_QUOTE  &none
 &none  &kp A  &kp R  &kp S             &kp T        &kp G    &kp M  &kp N        &kp E              &kp I    &kp O             &none
 &none  &kp Z  &kp X  &kp C             &kp D        &kp V    &kp K  &kp H        &kp COMMA          &kp DOT  &kp SLASH         &none
-                     &td_left_nav_sys  &lt 6 SPACE  &mo 2    &mo 1  &lt 6 SPACE  &td_right_nav_sys
+                     &td_left_nav_sys  &lt 5 SPACE  &mo 2    &mo 1  &lt 6 SPACE  &td_right_nav_sys
             >;
         };
 
         left_sym_flip_alpha {
             bindings = <
 &none  &kp GRAVE  &kp TILDE      &kp CARET         &kp DOLLAR            &kp HASH     &kp B   &kp P   &kp F   &kp W  &kp Q  &none
-&none  &trans     &kp COLON      &kp MINUS         &kp LEFT_PARENTHESIS  &kp EQUAL    &kp G   &kp T   &kp S   &kp R  &kp A  &none
+&none  &kp PIPE   &kp COLON      &kp MINUS         &kp LEFT_PARENTHESIS  &kp EQUAL    &kp G   &kp T   &kp S   &kp R  &kp A  &none
 &none  &trans     &kp LESS_THAN  &kp LEFT_BRACKET  &kp LEFT_BRACE        &kp PIPE     &kp V   &kp D   &kp C   &kp X  &kp Z  &none
                                  &trans            &trans                &trans       &trans  &trans  &trans
             >;
@@ -748,47 +748,46 @@
 
         right_sym_flip_alpha {
             bindings = <
-&none  &kp APOS  &kp Y    &kp U      &kp L   &kp J     &kp EXCLAMATION  &kp AMPERSAND          &kp AT_SIGN        &kp PERCENT       &kp ASTERISK  &none
-&none  &kp O     &kp I    &kp E      &kp N   &kp M     &kp PLUS         &kp RIGHT_PARENTHESIS  &kp UNDERSCORE     &kp SEMICOLON     &trans        &none
-&none  &kp FSLH  &kp DOT  &kp COMMA  &kp H   &kp K     &kp BACKSLASH    &kp RIGHT_BRACE        &kp RIGHT_BRACKET  &kp GREATER_THAN  &trans        &none
+&none  &kp APOS  &kp Y    &kp U      &kp L   &kp J     &kp EXCLAMATION  &kp AMPERSAND          &kp AT_SIGN        &kp PERCENT       &kp ASTERISK   &none
+&none  &kp O     &kp I    &kp E      &kp N   &kp M     &kp PLUS         &kp RIGHT_PARENTHESIS  &kp UNDERSCORE     &kp SEMICOLON     &kp BACKSLASH  &none
+&none  &kp FSLH  &kp DOT  &kp COMMA  &kp H   &kp K     &kp BACKSLASH    &kp RIGHT_BRACE        &kp RIGHT_BRACKET  &kp GREATER_THAN  &trans         &none
                           &trans     &trans  &trans    &trans           &trans                 &trans
             >;
         };
 
         symbol {
             bindings = <
-&none  &kp GRAVE  &kp TILDE      &kp CARET         &kp DOLLAR            &kp HASH     &kp EXCLAMATION  &kp AMPERSAND          &kp AT_SIGN        &kp PERCENT       &kp ASTERISK  &none
-&none  &trans     &kp COLON      &kp MINUS         &kp LEFT_PARENTHESIS  &kp EQUAL    &kp PLUS         &kp RIGHT_PARENTHESIS  &kp UNDERSCORE     &kp SEMICOLON     &trans        &none
-&none  &trans     &kp LESS_THAN  &kp LEFT_BRACKET  &kp LEFT_BRACE        &kp PIPE     &kp BACKSLASH    &kp RIGHT_BRACE        &kp RIGHT_BRACKET  &kp GREATER_THAN  &trans        &none
+&none  &kp GRAVE  &kp TILDE      &kp CARET         &kp DOLLAR            &kp HASH     &kp EXCLAMATION  &kp AMPERSAND          &kp AT_SIGN        &kp PERCENT       &kp ASTERISK   &none
+&none  &kp PIPE   &kp COLON      &kp MINUS         &kp LEFT_PARENTHESIS  &kp EQUAL    &kp PLUS         &kp RIGHT_PARENTHESIS  &kp UNDERSCORE     &kp SEMICOLON     &kp BACKSLASH  &none
+&none  &trans     &kp LESS_THAN  &kp LEFT_BRACKET  &kp LEFT_BRACE        &kp PIPE     &kp BACKSLASH    &kp RIGHT_BRACE        &kp RIGHT_BRACKET  &kp GREATER_THAN  &trans         &none
                                  &trans            &trans                &trans       &trans           &trans                 &trans
             >;
         };
 
         symbol_flip {
             bindings = <
-&none  &kp ASTERISK  &kp PERCENT       &kp AT_SIGN        &kp AMPERSAND          &kp EXCLAMATION    &kp HASH   &kp DOLLAR            &kp CARET         &kp TILDE      &kp GRAVE  &none
-&none  &trans        &kp SEMICOLON     &kp UNDERSCORE     &kp RIGHT_PARENTHESIS  &kp PLUS           &kp EQUAL  &kp LEFT_PARENTHESIS  &kp MINUS         &kp COLON      &trans     &none
-&none  &trans        &kp GREATER_THAN  &kp RIGHT_BRACKET  &kp RIGHT_BRACE        &kp BACKSLASH      &kp PIPE   &kp LEFT_BRACE        &kp LEFT_BRACKET  &kp LESS_THAN  &trans     &none
-                                       &trans             &trans                 &trans             &trans     &trans                &trans
+&none  &kp ASTERISK   &kp PERCENT       &kp AT_SIGN        &kp AMPERSAND          &kp EXCLAMATION    &kp HASH   &kp DOLLAR            &kp CARET         &kp TILDE      &kp GRAVE  &none
+&none  &kp BACKSLASH  &kp SEMICOLON     &kp UNDERSCORE     &kp RIGHT_PARENTHESIS  &kp PLUS           &kp EQUAL  &kp LEFT_PARENTHESIS  &kp MINUS         &kp COLON      &kp PIPE   &none
+&none  &trans         &kp GREATER_THAN  &kp RIGHT_BRACKET  &kp RIGHT_BRACE        &kp BACKSLASH      &kp PIPE   &kp LEFT_BRACE        &kp LEFT_BRACKET  &kp LESS_THAN  &trans     &none
+                                        &trans             &trans                 &trans             &trans     &trans                &trans
             >;
         };
-
 
         left_num_nav {
             bindings = <
 &trans  &trans  &kp N7  &kp N8  &kp N9  &kp COMMA    &kp PRINTSCREEN  &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &kp RC(A)  &trans
 &trans  &sl 4   &kp N4  &kp N5  &kp N6  &kp N0       &kp RC(Y)        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &mo 6      &trans
 &trans  &sl 3   &kp N1  &kp N2  &kp N3  &kp DOT      &kp RC(V)        &kp RC(Z)       &kp RC(C)       &kp RC(X)        &trans     &trans
-                        &trans  &trans  &trans       &trans     &trans  &trans
+                        &trans  &trans  &trans       &trans           &trans          &trans
             >;
         };
 
         right_num_nav {
-             bindings = <
+            bindings = <
 &trans  &kp LC(A)  &kp PAGE_DOWN   &kp UP_ARROW    &kp PAGE_UP      &kp PRINTSCREEN    &kp COMMA  &kp N7  &kp N8  &kp N9  &trans  &trans
 &trans  &mo 6      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(Y)          &kp N0     &kp N4  &kp N5  &kp N6  &sl 4   &trans
 &trans  &trans     &kp LC(X)       &kp LC(C)       &kp LC(Z)        &kp LC(V)          &kp DOT    &kp N1  &kp N2  &kp N3  &sl 3   &trans
-                                   &trans          &trans           &trans             &trans           &trans          &trans
+                                   &trans          &trans           &trans             &trans     &trans  &trans
             >;
         };
 
