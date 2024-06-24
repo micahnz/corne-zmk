@@ -430,7 +430,6 @@
             bindings = <&lm_left_tab LEFT_ALT TAB>;
             key-positions = <4 13>;
             require-prior-idle-ms = <100>;
-            require-prior-idle-ms = <100>
             slow-release;
         };
 
