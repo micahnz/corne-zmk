@@ -206,6 +206,7 @@
             quick-tap-ms = <500>;
             hold-while-undecided;
             bindings = <&mo>, <&kp>;
+
             require-prior-idle-ms = <100>;
         };
 
@@ -737,13 +738,13 @@
         };
 
         R_SYM {
-            bindings = <&sl 5>;
+            bindings = <&sl 6>;
             key-positions = <40 22>;
             require-prior-idle-ms = <100>;
         };
 
         R_SYM_FLIP {
-            bindings = <&sl 6>;
+            bindings = <&sl 5>;
             key-positions = <40 34>;
             require-prior-idle-ms = <100>;
         };
