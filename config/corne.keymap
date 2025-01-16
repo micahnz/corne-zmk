@@ -204,10 +204,11 @@
             #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <200>;
-            quick-tap-ms = <500>;
+            quick-tap-ms = <200>;
             hold-while-undecided;
             bindings = <&mo>, <&kp>;
 
+            hold-trigger-key-positions = <5 17 29 28 4 16 3 15 27 26 14 2 1 13 25>;
             require-prior-idle-ms = <100>;
         };
 
@@ -216,7 +217,7 @@
             #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <200>;
-            quick-tap-ms = <500>;
+            quick-tap-ms = <200>;
             hold-while-undecided;
             bindings = <&mo>, <&kp>;
 
