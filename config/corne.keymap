@@ -201,7 +201,7 @@
         lt_left: lt_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
+            flavor = "balanced";
             tapping-term-ms = <200>;
             quick-tap-ms = <300>;
             hold-while-undecided;
@@ -212,7 +212,7 @@
         lt_right: lt_right {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
+            flavor = "balanced";
             tapping-term-ms = <200>;
             quick-tap-ms = <300>;
             hold-while-undecided;
