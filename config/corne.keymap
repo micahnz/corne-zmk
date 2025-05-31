@@ -345,105 +345,105 @@
             bindings = <&ht_lm_left_sk LEFT_GUI LEFT_GUI>;
             key-positions = <17 16>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
         };
 
         L_GUI_SHIFT {
             bindings = <&ht_lm_left_sk LS(LEFT_GUI) LS(LEFT_GUI)>;
             key-positions = <17 3>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
         };
 
         L_GUI_CTRL {
             bindings = <&ht_lm_left_sk LC(LEFT_GUI) LC(LEFT_GUI)>;
             key-positions = <17 15>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
         };
 
         L_GUI_ALT {
             bindings = <&ht_lm_left_sk LA(LEFT_GUI) LA(LEFT_GUI)>;
             key-positions = <17 13>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
         };
 
         L_GUI_CTRL_SHIFT {
             bindings = <&ht_lm_left_sk LS(LC(LEFT_GUI)) LS(LC(LEFT_GUI))>;
             key-positions = <17 15 16>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
         };
 
         L_CTRL {
             bindings = <&ht_lm_left_sk LEFT_CONTROL LEFT_CONTROL>;
             key-positions = <14 15>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
         };
 
         L_ALT {
             bindings = <&ht_lm_left_sk LEFT_ALT LEFT_ALT>;
             key-positions = <13 14>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
         };
 
         L_ALT_SHIFT {
             bindings = <&ht_lm_left_sk LA(LEFT_SHIFT) LA(LEFT_SHIFT)>;
             key-positions = <16 13>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
         };
 
         L_SHIFT {
             bindings = <&td_ls>;
             key-positions = <16 15>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
         };
 
         L_CTRL_SHIFT {
             bindings = <&ht_lm_left_sk LC(LEFT_SHIFT) LC(LEFT_SHIFT)>;
             key-positions = <16 15 14>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
         };
 
         L_CTRL_ALT {
             bindings = <&ht_lm_left_sk LC(LEFT_ALT) LC(LEFT_ALT)>;
             key-positions = <13 14 15>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
         };
 
         L_CTRL_ALT_SHIFT {
             bindings = <&ht_lm_left_sk LC(LA(LEFT_SHIFT)) LC(LA(LEFT_SHIFT))>;
             key-positions = <13 16 14 15>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
         };
 
         L_TAB {
             bindings = <&kp TAB>;
             key-positions = <4 5>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
         };
 
         L_SHIFT_TAB {
             bindings = <&kp LS(TAB)>;
             key-positions = <4 3 5>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
         };
 
         L_ALT_TAB {
             bindings = <&lm_left_tab LEFT_ALT TAB>;
             key-positions = <4 13>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             slow-release;
         };
 
@@ -451,7 +451,7 @@
             bindings = <&lm_left_tab LEFT_ALT LS(TAB)>;
             key-positions = <4 13 3>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             slow-release;
         };
 
@@ -459,7 +459,7 @@
             bindings = <&lm_left_tab LEFT_CONTROL TAB>;
             key-positions = <4 14>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             slow-release;
         };
 
@@ -467,7 +467,7 @@
             bindings = <&lm_left_tab LEFT_CONTROL LS(TAB)>;
             key-positions = <4 14 3>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             slow-release;
         };
 
@@ -475,7 +475,7 @@
             bindings = <&lm_left_tab LEFT_GUI TAB>;
             key-positions = <17 4>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             slow-release;
         };
 
@@ -483,7 +483,7 @@
             bindings = <&lm_left_tab LEFT_GUI LS(TAB)>;
             key-positions = <17 3 4>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             slow-release;
         };
 
@@ -491,56 +491,56 @@
             bindings = <&kp ESCAPE>;
             key-positions = <1 2>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
         };
 
         L_DEL {
             bindings = <&kp DELETE>;
             key-positions = <3 2>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
         };
 
         L_BACKSPACE {
             bindings = <&kp BACKSPACE>;
             key-positions = <4 3>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
         };
 
         L_ENTER {
             bindings = <&kp ENTER>;
             key-positions = <27 28>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
         };
 
         L_SHIFT_ENTER {
             bindings = <&kp RS(ENTER)>;
             key-positions = <28 27 26>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
         };
 
         L_SYM {
             bindings = <&sl 6>;
             key-positions = <37 13>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
         };
 
         L_SYM_FLIP {
             bindings = <&sl 7>;
             key-positions = <37 25>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
         };
 
         L_NAV_UP {
             bindings = <&lm_left_nav UP_ARROW>;
             key-positions = <37 3>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             slow-release;
         };
 
@@ -548,7 +548,7 @@
             bindings = <&lm_left_nav DOWN_ARROW>;
             key-positions = <37 15>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             slow-release;
         };
 
@@ -556,7 +556,7 @@
             bindings = <&lm_left_nav LEFT_ARROW>;
             key-positions = <37 14>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             slow-release;
         };
 
@@ -564,7 +564,7 @@
             bindings = <&lm_left_nav RIGHT_ARROW>;
             key-positions = <37 16>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             slow-release;
         };
 
@@ -572,7 +572,7 @@
             bindings = <&lm_left_nav LC(V)>;
             key-positions = <37 29>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             slow-release;
         };
 
@@ -580,7 +580,7 @@
             bindings = <&lm_left_nav LC(Y)>;
             key-positions = <37 17>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             slow-release;
         };
 
@@ -588,7 +588,7 @@
             bindings = <&lm_left_nav LC(C)>;
             key-positions = <37 27>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             slow-release;
         };
 
@@ -596,7 +596,7 @@
             bindings = <&lm_left_nav LC(X)>;
             key-positions = <37 26>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             slow-release;
         };
 
@@ -604,7 +604,7 @@
             bindings = <&lm_left_nav LC(Z)>;
             key-positions = <37 28>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             slow-release;
         };
 
@@ -612,7 +612,7 @@
             bindings = <&lm_left_nav LC(A)>;
             key-positions = <37 1>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             slow-release;
         };
 
@@ -620,105 +620,105 @@
             bindings = <&ht_lm_right_sk RIGHT_GUI RIGHT_GUI>;
             key-positions = <18 19>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
         };
 
         R_GUI_SHIFT {
             bindings = <&ht_lm_right_sk RS(RIGHT_GUI) RS(RIGHT_GUI)>;
             key-positions = <18 8>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
         };
 
         R_GUI_CTRL {
             bindings = <&ht_lm_right_sk RC(RIGHT_GUI) RC(RIGHT_GUI)>;
             key-positions = <18 20>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
         };
 
         R_GUI_ALT {
             bindings = <&ht_lm_right_sk RA(RIGHT_GUI) RA(RIGHT_GUI)>;
             key-positions = <18 22>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
         };
 
         R_GUI_CTRL_SHIFT {
             bindings = <&ht_lm_right_sk RS(RC(RIGHT_GUI)) RS(RC(RIGHT_GUI))>;
             key-positions = <18 20 19>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
         };
 
         R_CTRL {
             bindings = <&ht_lm_right_sk RIGHT_CONTROL RIGHT_CONTROL>;
             key-positions = <21 20>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
         };
 
         R_ALT {
             bindings = <&ht_lm_right_sk RIGHT_ALT RIGHT_ALT>;
             key-positions = <22 21>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
         };
 
         R_ALT_SHIFT {
             bindings = <&ht_lm_right_sk RA(LEFT_SHIFT) RA(LEFT_SHIFT)>;
             key-positions = <19 22>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
         };
 
         R_SHIFT {
             bindings = <&td_rs>;
             key-positions = <20 19>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
         };
 
         R_CTRL_SHIFT {
             bindings = <&ht_lm_right_sk RC(RIGHT_SHIFT) RC(RIGHT_SHIFT)>;
             key-positions = <19 20 21>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
         };
 
         R_CTRL_ALT {
             bindings = <&ht_lm_right_sk RC(RIGHT_ALT) RC(RIGHT_ALT)>;
             key-positions = <22 21 20>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
         };
 
         R_CTRL_ALT_SHIFT {
             bindings = <&ht_lm_right_sk RC(RA(RIGHT_SHIFT)) RC(RA(RIGHT_SHIFT))>;
             key-positions = <19 22 21 20>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
         };
 
         R_TAB {
             bindings = <&kp TAB>;
             key-positions = <6 7>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
         };
 
         R_SHIFT_TAB {
             bindings = <&kp LS(TAB)>;
             key-positions = <6 7 8>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
         };
 
         R_ALT_TAB {
             bindings = <&lm_right_tab LEFT_ALT TAB>;
             key-positions = <7 22>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             slow-release;
         };
 
@@ -726,7 +726,7 @@
             bindings = <&lm_right_tab LEFT_ALT LS(TAB)>;
             key-positions = <7 8 22>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             slow-release;
         };
 
@@ -734,7 +734,7 @@
             bindings = <&lm_right_tab LEFT_CONTROL TAB>;
             key-positions = <7 21>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             slow-release;
         };
 
@@ -742,7 +742,7 @@
             bindings = <&lm_right_tab LEFT_CONTROL LS(TAB)>;
             key-positions = <7 8 21>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             slow-release;
         };
 
@@ -750,7 +750,7 @@
             bindings = <&lm_right_tab RIGHT_GUI TAB>;
             key-positions = <18 7>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             slow-release;
         };
 
@@ -758,7 +758,7 @@
             bindings = <&lm_right_tab LEFT_GUI LS(TAB)>;
             key-positions = <18 7 8>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             slow-release;
         };
 
@@ -766,56 +766,56 @@
             bindings = <&kp ESCAPE>;
             key-positions = <10 9>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
         };
 
         R_DEL {
             bindings = <&kp DELETE>;
             key-positions = <8 9>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
         };
 
         R_BACKSPACE {
             bindings = <&kp BACKSPACE>;
             key-positions = <7 8>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
         };
 
         R_ENTER {
             bindings = <&kp ENTER>;
             key-positions = <31 32>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
         };
 
         R_SHIFT_ENTER {
             bindings = <&kp RS(ENTER)>;
             key-positions = <31 32 33>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
         };
 
         R_SYM {
             bindings = <&sl 7>;
             key-positions = <40 22>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
         };
 
         R_SYM_FLIP {
             bindings = <&sl 6>;
             key-positions = <40 34>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
         };
 
         R_NAV_UP {
             bindings = <&lm_right_nav UP_ARROW>;
             key-positions = <8 40>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             slow-release;
         };
 
@@ -823,7 +823,7 @@
             bindings = <&lm_right_nav DOWN_ARROW>;
             key-positions = <20 40>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             slow-release;
         };
 
@@ -831,7 +831,7 @@
             bindings = <&lm_right_nav LEFT_ARROW>;
             key-positions = <40 19>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             slow-release;
         };
 
@@ -839,7 +839,7 @@
             bindings = <&lm_right_nav RIGHT_ARROW>;
             key-positions = <40 21>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             slow-release;
         };
 
@@ -847,7 +847,7 @@
             bindings = <&lm_right_nav RC(V)>;
             key-positions = <40 30>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             slow-release;
         };
 
@@ -855,7 +855,7 @@
             bindings = <&lm_right_nav RC(Y)>;
             key-positions = <40 18>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             slow-release;
         };
 
@@ -863,7 +863,7 @@
             bindings = <&lm_right_nav RC(C)>;
             key-positions = <40 32>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             slow-release;
         };
 
@@ -871,7 +871,7 @@
             bindings = <&lm_right_nav RC(X)>;
             key-positions = <40 33>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             slow-release;
         };
 
@@ -879,7 +879,7 @@
             bindings = <&lm_right_nav RC(Z)>;
             key-positions = <40 31>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             slow-release;
         };
 
@@ -887,7 +887,7 @@
             bindings = <&lm_right_nav RC(A)>;
             key-positions = <40 10>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             slow-release;
         };
 
@@ -895,13 +895,13 @@
             bindings = <&kp CAPSLOCK>;
             key-positions = <16 15 19 20>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
         };
 
         TOG_GAME_MODE {
             bindings = <&tog 1>;
             key-positions = <3 14 16 38>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
         };
     };
 
